@@ -1,0 +1,257 @@
+body, html {
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  height: 100%;
+}
+
+.header-container {
+  overflow: hidden;
+  margin: 0 10px;
+  display: flex;
+  position: relative;
+}
+
+nav {
+  display: inline;
+  margin: 5px 10px;
+  background: lightblue;
+  width: auto;
+  text-align: center;
+  padding: 0;
+}
+
+nav ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  background: lightblue;
+}
+
+.Tier1 {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  /background: grey;
+}
+
+.Tier1:hover {
+  background: deepskyblue;
+}
+
+.Tier1  a {
+  padding: 5px;
+}
+
+.Tier1 a:hover {
+  background: deepskyblue;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #566c73;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+.Drop {
+  position: relative;
+  display: inline;
+}
+
+.EventsDropCont, .LabsDropCont, .ResDropCont {
+  display: none;
+  position: absolute;
+  background-color: teal;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0px;
+  margin: 0px;
+  z-index: 1;
+}
+
+.LabsDropCont {
+
+}
+
+.ResDropCont {
+
+}
+
+.Drop li {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  padding: 0px;
+}
+
+.Drop li:hover {
+  background: deepskyblue;
+}
+
+.Drop li a {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  width: 120px;
+  padding: 5px 2px 5px 0px;
+}
+
+.Drop li a:hover {
+  background: deepskyblue;
+}
+
+#Events:hover .EventsDropCont {
+  display: block;
+}
+
+#Labs:hover .LabsDropCont {
+  display: block;
+}
+
+#Res:hover .ResDropCont {
+  display: block;
+}
+
+h3 {
+  margin: 10px;
+}
+
+p {
+  margin: 10px;
+}
+
+.div3, .div4 {
+  display: none;
+}
+
+.div5, .div6 {
+  display: none;
+}
+
+.div7, .div8 {
+  display: none;
+}
+
+.content {
+  min-height: 80%;
+  margin: 0 10px;
+}
+
+footer {
+  background: lightblue;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  margin: 30px 0;
+}
+
+footer ul {
+  display: inline;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline;
+  text-align: center;
+  margin: 0 10%;
+}
+
+@media only screen and (max-width: 750px) {
+
+  html {
+    min-width: 400px;
+  }
+
+  .header-container {
+    overflow: hidden;
+    margin: 5px;
+    display: relative;
+  }
+
+  .div1 {
+    min-width: 120%;
+    height: 400px;
+    margin: 0 0px 0 -80px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    background: #519090;
+    overflow: hidden;
+    float: left;
+    position: relative;
+  }
+
+  .bgimg-1 {
+    background: url("assets/img/research.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: inherit;
+    left: 80px;
+    right: -80px;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .div2 {
+    width: auto;
+    height: 400px;
+    margin: 0 -80px 0 -105%;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    background: black;
+    overflow: hidden;
+    left: 0px;
+    position: relative;
+    /*right: -80px;*/
+    opacity: 0.7;
+  }
+
+  .bgimg-2 {
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    background: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .caption2 {
+      margin: auto 18% auto 5%;
+      text-align: center;
+  }
+
+  .caption2-M {
+    margin: auto;
+    padding: 5px;
+    border: 5px solid white;
+    background: rgb(161, 167, 175, 0.5);
+    text-align: center;
+    display: block;
+    z-index: 3;
+  }
+
+  .caption1 {
+    display: none;
+  }
+
+  #button1 {
+    display: none;
+  }
+
+  .border {
+    color: white;
+  }
+}
