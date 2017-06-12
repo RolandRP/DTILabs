@@ -32,11 +32,19 @@ nav ul {
   display: inline-block;
   text-align: center;
   margin: 0;
-  padding: 5px;
+  padding: 0;
   /background: grey;
 }
 
 .Tier1:hover {
+  background: deepskyblue;
+}
+
+.Tier1  a {
+  padding: 5px;
+}
+
+.Tier1 a:hover {
   background: deepskyblue;
 }
 
@@ -61,7 +69,7 @@ nav ul li a:hover {
   min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 0px;
-  margin: 0px 0px 0px -5px;
+  margin: 0px;
   z-index: 1;
 }
 
@@ -77,11 +85,22 @@ nav ul li a:hover {
   display: inline-block;
   text-align: center;
   margin: auto;
-  width: 120px;
-  padding: 5px 2px 5px 2px;
+  padding: 0px;
 }
 
 .Drop li:hover {
+  background: deepskyblue;
+}
+
+.Drop li a {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  width: 120px;
+  padding: 5px 2px 5px 0px;
+}
+
+.Drop li a:hover {
   background: deepskyblue;
 }
 
