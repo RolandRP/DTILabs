@@ -24,12 +24,11 @@ nav {
 nav ul {
   text-decoration: none;
   list-style: none;
-  margin: 0;
   padding: 0;
   background: lightblue;
 }
 
-nav ul li {
+.Tier1 {
   display: inline-block;
   text-align: center;
   margin: 0;
@@ -37,8 +36,8 @@ nav ul li {
   /background: grey;
 }
 
-nav ul li:hover {
-  background: aqua;
+.Tier1:hover {
+  background: deepskyblue;
 }
 
 nav ul li a {
@@ -80,20 +79,10 @@ nav ul li a:hover {
   margin: auto;
   width: 120px;
   padding: 5px 2px 5px 2px;
-  /background: grey;
 }
 
 .Drop li:hover {
-  background: purple;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #566c73;
-}
-
-nav ul li a:hover {
-  color: white;
+  background: deepskyblue;
 }
 
 #Events:hover .EventsDropCont {

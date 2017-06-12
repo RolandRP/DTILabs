@@ -1,6 +1,6 @@
 
 :root {
-  --lab-colour: rgba(255, 153, 0, 1);
+  --lab-colour: rgba(8, 153, 0, 1);
 }
 
 .div1 {
@@ -17,7 +17,7 @@
 }
 
 .bgimg-1 {
-  background: url("/assets/img/soft.jpg");
+  background: url("/assets/img/ixd.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;

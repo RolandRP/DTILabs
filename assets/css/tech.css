@@ -1,6 +1,6 @@
 
 :root {
-  --lab-colour: rgba(161, 167, 175, 0.5);
+  --lab-colour: rgba(0, 153, 255, 1);
 }
 
 .div1 {
@@ -40,7 +40,7 @@
   -webkit-transform: skew(20deg);
   -moz-transform: skew(20deg);
   -o-transform: skew(20deg);
-  background: rgba(0, 153, 255, 1);
+  background: var(--lab-colour);
   overflow: hidden;
   float: right;
   position: relative;
@@ -71,7 +71,7 @@
 .caption1 {
   margin: 180px 140px auto 20px;
   border: 5px solid white;
-  background: var(--lab-colour);
+  background: rgba(161, 167, 175, 0.5);
   text-align: center;
 }
 

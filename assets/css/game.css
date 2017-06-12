@@ -1,6 +1,6 @@
 
 :root {
-  --lab-colour: rgba(255, 153, 0, 1);
+  --lab-colour: rgba(143, 0, 179, 1);
 }
 
 .div1 {
@@ -17,7 +17,7 @@
 }
 
 .bgimg-1 {
-  background: url("/assets/img/soft.jpg");
+  background: url("/assets/img/game.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
