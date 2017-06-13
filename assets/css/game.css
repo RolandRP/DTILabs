@@ -5,9 +5,8 @@
 {% include base.html %}
 
 
-
 :root {
-  --lab-colour: rgba(255, 153, 0, 1);
+  --lab-colour: rgba(143, 0, 179, 1);
 }
 
 .div1 {
@@ -24,7 +23,7 @@
 }
 
 .bgimg-1 {
-  background: url("{{base}}/assets/img/soft.jpg");
+  background: url("{{base}}/assets/img/game.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -90,8 +89,20 @@
     margin: auto 100px auto 80px;
     color: white;
 }
+
+.button {
+  margin: auto 48% 30px auto;
+  background: rgb(161, 167, 175, 0.5);
+  align-self: flex-end;
+  border: #c3c6cc solid 0px;
+  border-radius: 15%;
+  padding: 0px 14px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
 .gameNav{
-  background-color: Orange;
+  background-color: Purple;
   list-style-type: none;
 }
 
@@ -116,5 +127,5 @@ li a {
 }
 
 li a:hover {
-    background-color: #ffcc66;
+    background-color: #660066;
 }

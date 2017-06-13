@@ -1,0 +1,35 @@
+---
+---
+
+
+{% include base.html %}
+
+
+
+.personL, .personR {
+  margin: 80px 10px;
+}
+
+.user {
+  display: block;
+  background: url('{{base}}/assets/img/user.jpeg');
+  width: 125px;
+  height: 125px;
+  /width: auto;
+  /height: auto;
+  padding: 0px;
+  margin: 10px;
+}
+
+.personL .user {
+  float: left;
+}
+
+.personR .user {
+  float: right;
+}
+
+p {
+  padding: 10px;
+  margin: 0px;
+}

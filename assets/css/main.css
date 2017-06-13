@@ -1,3 +1,9 @@
+---
+---
+
+{% include base.html %}
+
+
 body, html {
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
@@ -10,102 +16,6 @@ body, html {
   margin: 0 10px;
   display: flex;
   position: relative;
-}
-
-nav {
-  display: inline;
-  margin: 5px 10px;
-  background: lightblue;
-  width: auto;
-  text-align: center;
-  padding: 0;
-}
-
-nav ul {
-  text-decoration: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background: lightblue;
-}
-
-nav ul li {
-  display: inline-block;
-  text-align: center;
-  margin: 0;
-  padding: 5px;
-  /background: grey;
-}
-
-nav ul li:hover {
-  background: aqua;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #566c73;
-}
-
-nav ul li a:hover {
-  color: white;
-}
-
-.Drop {
-  position: relative;
-  display: inline;
-}
-
-.EventsDropCont, .LabsDropCont, .ResDropCont {
-  display: none;
-  position: absolute;
-  background-color: teal;
-  min-width: 120px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 0px;
-  margin: 0px 0px 0px -5px;
-  z-index: 1;
-}
-
-.LabsDropCont {
-
-}
-
-.ResDropCont {
-
-}
-
-.Drop li {
-  display: inline-block;
-  text-align: center;
-  margin: auto;
-  width: 120px;
-  padding: 5px 2px 5px 2px;
-  /background: grey;
-}
-
-.Drop li:hover {
-  background: purple;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #566c73;
-}
-
-nav ul li a:hover {
-  color: white;
-}
-
-#Events:hover .EventsDropCont {
-  display: block;
-}
-
-#Labs:hover .LabsDropCont {
-  display: block;
-}
-
-#Res:hover .ResDropCont {
-  display: block;
 }
 
 h3 {
@@ -177,7 +87,7 @@ footer ul li {
   }
 
   .bgimg-1 {
-    background: url("assets/img/research.jpeg");
+    background: url("{{base}}/assets/img/research.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;

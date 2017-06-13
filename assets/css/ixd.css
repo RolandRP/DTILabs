@@ -5,9 +5,8 @@
 {% include base.html %}
 
 
-
 :root {
-  --lab-colour: rgba(255, 153, 0, 1);
+  --lab-colour: rgba(8, 153, 0, 1);
 }
 
 .div1 {
@@ -24,7 +23,7 @@
 }
 
 .bgimg-1 {
-  background: url("{{base}}/assets/img/soft.jpg");
+  background: url("{{base}}/assets/img/ixd.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -91,10 +90,9 @@
     color: white;
 }
 .gameNav{
-  background-color: Orange;
+  background-color: green;
   list-style-type: none;
 }
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -116,5 +114,5 @@ li a {
 }
 
 li a:hover {
-    background-color: #ffcc66;
+    background-color: #66ff99;
 }

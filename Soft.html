@@ -5,9 +5,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    {% include base.html %}
     <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/soft.css">
+    <link rel="stylesheet" href="{{base}}/assets/css/main.css">
+    <link rel="stylesheet" href="{{base}}/assets/css/soft.css">
     <title>Software</title>
   </head>
   <body>
@@ -36,6 +37,14 @@
     </div>
 
     <div class="content">
+      <div class="gameNav">
+      <ul>
+        <li><a class ="listInNav" href="#home">Home</a></li>
+        <li><a class ="listInNav" href="#resources">Resources</a></li>
+        <li><a class ="listInNav" href="#events">Events</a></li>
+        <li><a class ="listInNav" href="#contacts">Contacts</a></li>
+      </ul>
+      </div>
       <h3>Labori vaade</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
