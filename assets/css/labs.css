@@ -1,0 +1,543 @@
+a{
+	text-decoration:none;
+}
+
+:link{
+	color:black;
+}
+
+:visited{
+	color:black;
+}
+
+.content{
+	margin:auto;
+	padding:20px;
+	width:93%;
+}
+
+
+/*Gamification Lab*/
+.labsGamification{
+	margin-bottom:20px;
+	overflow: hidden;
+	height:200px;
+	width:100%;
+	display: flex;
+	position: relative;
+}
+
+.labsGamificationLeft{
+	min-width: 40%;
+	margin: 0 0 0 -120px !important;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	background: #519090;
+	overflow: hidden;
+	float: left;
+	position: relative;
+}
+
+.labsGamificationPic{
+	background: url("/assets/img/game.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	height: inherit;
+	left: 80px;
+	right: -80px;
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
+	width:100%;
+	height:100%;
+}
+
+
+.labsGamificationRight{
+	width: auto;
+	margin: 0 -80px 0 10px;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	background:rgba(124,70,145,0.6);
+	overflow: hidden;
+	float: right;
+	position: relative;
+	width:100%;
+	height:100%;
+	/*right: -80px;*/
+}
+
+.labsGamificationText{
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
+	background: none;
+	height: inherit;
+}
+
+/*IXD Lab*/
+.labsIXD{
+	margin-bottom:20px;
+	overflow: hidden;
+	height:200px;
+	width:100%;
+	display: flex;
+	position: relative;
+}
+
+.labsIXDRight{
+	min-width: 40%;
+	margin: 0 -80px 0 10px;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	background: rgba(146,180,87,0.6);
+	overflow: hidden;
+	float: left;
+	position: relative;
+}
+
+.labsIXDPic{
+	background: url("/assets/img/ixd.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	height: inherit;
+	left: -80px;
+	right: 80px;
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
+	width:100%;
+	height:100%;
+}
+
+
+.labsIXDLeft{
+	width: auto;
+	margin: 0 0 0 -120px;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	background:rgba(146,180,87,0.6);
+	overflow: hidden;
+	float: right;
+	position: relative;
+	width:100%;
+	height:100%;
+	/*right: -80px;*/
+}
+
+.labsIXDText{
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
+	background: none;
+	height: inherit;
+	display: flex;
+	align-items: left;
+	justify-content: left;
+	flex-direction: column;
+}
+
+/*Technology Lab*/
+.labsTechnology{
+	margin-bottom:20px;
+	overflow: hidden;
+	height:200px;
+	width:100%;
+	display: flex;
+	position: relative;
+}
+
+.labsTechnologyLeft{
+	min-width: 40%;
+	margin: 0 0 0 -120px;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	background: rgba(41,128,185,0.6);
+	overflow: hidden;
+	float: left;
+	position: relative;
+}
+
+.labsTechnologyPic{
+	background: url("/assets/img/iot.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	height: inherit;
+	left: 80px;
+	right: -80px;
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
+	width:100%;
+	height:100%;
+}
+
+
+.labsTechnologyRight{
+	width: auto;
+	margin: 0 -80px 0 10px;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	background:rgba(41,128,185,0.6);
+	overflow: hidden;
+	float: right;
+	position: relative;
+	width:100%;
+	height:100%;
+	/*right: -80px;*/
+}
+
+.labsTechnologyText{
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
+	background: none;
+	height: inherit;
+}
+
+/*Software Development Lab*/
+.labsSoftware{
+	overflow: hidden;
+	height:200px;
+	width:100%;
+	display: flex;
+	position: relative;
+}
+
+.labsSoftwareRight{
+	min-width: 40%;
+	margin: 0 -80px 0 10px;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	background: rgba(243,156,18,0.6);
+	overflow: hidden;
+	float: left;
+	position: relative;
+}
+
+.labsSoftwarePic{
+	background: url("/assets/img/soft.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	height: inherit;
+	left: -80px;
+	right: 80px;
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
+	width:100%;
+	height:100%;
+}
+
+.labsSoftwareLeft{
+	width: auto;
+	margin: 0 0 0 -120px;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	background:rgba(243,156,18,0.6);
+	overflow: hidden;
+	float: right;
+	position: relative;
+	width:100%;
+	height:100%;
+	/*right: -80px;*/
+}
+
+.labsSoftwareText{
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
+	background: none;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	left:80px;
+}
+
+@media only screen and (max-width: 750px) {
+	.content{
+		margin:0;
+		padding:0;
+		width:100%;
+	}
+	
+	/*Gamification Lab*/
+	.labsGamification{
+		height:150px;
+		margin:0px;
+		width:100%;
+		position: relative;
+	}
+
+	.labsGamificationLeft{
+		display:none;
+	}
+
+	.labsGamificationPic{
+		display:none;
+	}
+
+	.labsGamificationRight{
+		width:100%;
+		margin:0;
+		-webkit-transform: skew(0deg);
+		-moz-transform: skew(0deg);
+		-o-transform: skew(0deg);
+		background:url("/assets/img/game.jpg");
+		overflow: hidden;
+		float: none;
+		position: absolute;
+		width:100%;
+		height:100%;
+		/*right: -80px;*/
+	}
+
+	.labsGamificationText{
+		margin-top:-20px;
+		background:rgba(200,200,200,0.2);
+		-webkit-transform: skew(0deg);
+		-moz-transform: skew(0deg);
+		-o-transform: skew(0deg);
+		height: inherit;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	/*IXD Lab*/
+	.labsIXD{
+		height:150px;
+		margin:0px;
+		width:100%;
+		position: relative;
+	}
+
+	.labsIXDRight{
+		display:none;
+	}
+
+	.labsIXDPic{
+		display:none;
+	}
+
+
+	.labsIXDLeft{
+		width:100%;
+		margin:0;
+		-webkit-transform: skew(0deg);
+		-moz-transform: skew(0deg);
+		-o-transform: skew(0deg);
+		background:url("/assets/img/ixd.jpg");
+		overflow: hidden;
+		float: none;
+		position: absolute;
+		width:100%;
+		height:100%;
+		/*right: -80px;*/
+	}
+
+	.labsIXDText{
+		margin-top:-20px;
+		background:rgba(200,200,200,0.2);
+		-webkit-transform: skew(0deg);
+		-moz-transform: skew(0deg);
+		-o-transform: skew(0deg);
+		height: inherit;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	/*Technology Lab*/
+	.labsTechnology{
+		height:150px;
+		margin:0px;
+		width:100%;
+		position: relative;
+	}
+
+	.labsTechnologyLeft{
+		display:none;
+	}
+
+	.labsTechnologyPic{
+		display:none;
+	}
+
+
+	.labsTechnologyRight{
+		width:100%;
+		margin:0;
+		-webkit-transform: skew(0deg);
+		-moz-transform: skew(0deg);
+		-o-transform: skew(0deg);
+		background:url("/assets/img/iot.jpg");
+		overflow: hidden;
+		float: none;
+		position: absolute;
+		width:100%;
+		height:100%;
+		/*right: -80px;*/
+	}
+
+	.labsTechnologyText{
+		margin-top:-20px;
+		background:rgba(200,200,200,0.2);
+		-webkit-transform: skew(0deg);
+		-moz-transform: skew(0deg);
+		-o-transform: skew(0deg);
+		height: inherit;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	/*Software Development Lab*/
+	.labsSoftware{
+		height:150px;
+		margin:0px;
+		width:100%;
+		position: relative;
+	}
+
+	.labsSoftwareRight{
+		display:none;
+	}
+
+	.labsSoftwarePic{
+		display:none;
+	}
+
+	.labsSoftwareLeft{
+		width:100%;
+		margin:0;
+		-webkit-transform: skew(0deg);
+		-moz-transform: skew(0deg);
+		-o-transform: skew(0deg);
+		background:url("/assets/img/soft.jpg");
+		overflow: hidden;
+		float: none;
+		position: absolute;
+		width:100%;
+		height:100%;
+		/*right: -80px;*/
+	}
+
+	.labsSoftwareText{
+		margin-top:-20px;
+		background:rgba(200,200,200,0.2);
+		-webkit-transform: skew(0deg);
+		-moz-transform: skew(0deg);
+		-o-transform: skew(0deg);
+		height: inherit;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+
+
+/*
+.labsGamification{
+	
+	cursor:pointer;
+	background:rgba(124,70,145,0.7);
+	width:100%;
+	margin:0 auto;
+	display:flex;
+}
+
+.labsGamificationPic{
+	width:40%;
+	background-image:url("/assets/img/game.jpg");
+	background-size:cover;
+}
+
+.labsGamificationText{
+	background-color:rgba(255,255,255,0.2);
+	width:60%;
+}
+*/
+/*IXD Lab*/
+/*
+.labsIXD{
+	cursor:pointer;
+	background:rgba(146,180,87,0.8);
+	width:100%;
+	margin:0 auto;
+	display:flex;
+}
+
+.labsIXDPic{
+	width:40%;
+	background: url("/assets/img/ixd.jpg");
+	background-size: cover;
+}
+
+.labsIXDText{
+	background-color:rgba(255,255,255,0.3);
+	width:60%;
+}
+*/
+
+/*Technology Lab*/
+/*
+.labsTechnology{
+	cursor:pointer;
+	background:rgba(41,128,185,0.7);
+	width:100%;
+	margin:0 auto;
+	display:flex;
+}
+
+.labsTechnologyPic{
+	width:40%;
+	background: url("/assets/img/iot.jpg");
+	background-size: cover;
+}
+
+.labsTechnologyText{
+	background-color:rgba(255,255,255,0.3);
+	width:60%;
+}
+*/
+
+/*Software Development Lab*/
+/*
+.labsSoftware{
+	cursor:pointer;
+	background:rgba(243,156,18,0.7);
+	width:100%;
+	margin:0 auto;
+	display:flex;
+}
+
+.labsSoftwarePic{
+	width:40%;
+	background: url("/assets/img/soft.jpg");
+	background-size: cover;
+}
+
+.labsSoftwareText{
+	background-color:rgba(255,255,255,0.3);
+	width:60%;
+}
+*/
