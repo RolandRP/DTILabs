@@ -3,6 +3,7 @@
 
 {% include base.html %}
 
+@import url("{{base}}/assets/css/nav.css");
 
 body, html {
   margin: 0;
