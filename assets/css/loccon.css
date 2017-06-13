@@ -1,0 +1,20 @@
+table, th, td {
+	text-align: left;
+	border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: center-left;
+}
+th {
+    background-color: #80aaff;
+    color: white;
+}
+table#t01 {
+    width: 99%;    
+    background-color: #ccdcff;
+	/*box-shadow: 0 0 10px #000;*/
+}
+th, td{
+    border-bottom: 2px solid #4d88ff;
+}
