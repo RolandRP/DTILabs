@@ -1,4 +1,5 @@
-@import url("assets/css/vars.css");
+@import url("main.css");
+@import url("nav.css");
 
 .div1 {
   min-width: 45%;
