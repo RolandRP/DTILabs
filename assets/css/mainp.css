@@ -1,5 +1,12 @@
-@import url("main.css");
-@import url("nav.css");
+---
+---
+
+
+{% include base.html %}
+
+
+@import url("{{base}}/main.css");
+@import url("{{base}}/nav.css");
 
 .div1 {
   min-width: 45%;
@@ -15,7 +22,7 @@
 }
 
 .bgimg-1 {
-  background: url("/assets/img/research.jpeg");
+  background: url("{{base}}/assets/img/research.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;

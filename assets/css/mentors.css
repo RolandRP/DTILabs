@@ -1,10 +1,18 @@
+---
+---
+
+
+{% include base.html %}
+
+
+
 .personL, .personR {
   margin: 80px 10px;
 }
 
 .user {
   display: block;
-  background: url('/assets/img/user.jpeg');
+  background: url('{{base}}/assets/img/user.jpeg');
   width: 125px;
   height: 125px;
   /width: auto;

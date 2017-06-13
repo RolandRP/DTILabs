@@ -1,3 +1,9 @@
+---
+---
+
+
+{% include base.html %}
+
 
 :root {
   --lab-colour: rgba(8, 153, 0, 1);
@@ -17,7 +23,7 @@
 }
 
 .bgimg-1 {
-  background: url("/assets/img/ixd.jpg");
+  background: url("{{base}}/assets/img/ixd.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;

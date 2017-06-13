@@ -1,3 +1,9 @@
+---
+---
+
+{% include base.html %}
+
+
 body, html {
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
@@ -81,7 +87,7 @@ footer ul li {
   }
 
   .bgimg-1 {
-    background: url("assets/img/research.jpeg");
+    background: url("{{base}}/assets/img/research.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
