@@ -1,3 +1,6 @@
+---
+---
+{% include base.html %}
 a{
 	text-decoration:none;
 }
@@ -40,7 +43,7 @@ a{
 }
 
 .labsGamificationPic{
-	background: url("/assets/img/game.jpg");
+	background: url("{{base}}/assets/img/game.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
@@ -101,7 +104,7 @@ a{
 }
 
 .labsIXDPic{
-	background: url("/assets/img/ixd.jpg");
+	background: url("{{base}}/assets/img/ixd.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
@@ -166,7 +169,7 @@ a{
 }
 
 .labsTechnologyPic{
-	background: url("/assets/img/iot.jpg");
+	background: url("{{base}}/assets/img/iot.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
@@ -226,7 +229,7 @@ a{
 }
 
 .labsSoftwarePic{
-	background: url("/assets/img/soft.jpg");
+	background: url("{{base}}/assets/img/soft.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
@@ -297,7 +300,7 @@ a{
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		background:url("/assets/img/game.jpg");
+		background:url("{{base}}/assets/img/game.jpg");
 		overflow: hidden;
 		float: none;
 		position: absolute;
@@ -342,7 +345,7 @@ a{
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		background:url("/assets/img/ixd.jpg");
+		background:url("{{base}}/assets/img/ixd.jpg");
 		overflow: hidden;
 		float: none;
 		position: absolute;
@@ -387,7 +390,7 @@ a{
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		background:url("/assets/img/iot.jpg");
+		background:url("{{base}}/assets/img/iot.jpg");
 		overflow: hidden;
 		float: none;
 		position: absolute;
@@ -431,7 +434,7 @@ a{
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		background:url("/assets/img/soft.jpg");
+		background:url("{{base}}/assets/img/soft.jpg");
 		overflow: hidden;
 		float: none;
 		position: absolute;
