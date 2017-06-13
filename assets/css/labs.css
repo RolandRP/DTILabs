@@ -1,0 +1,127 @@
+a{
+	text-decoration:none;
+}
+
+:link{
+	color:black;
+}
+
+:visited{
+	color:black;
+}
+
+.content{
+	margin:auto;
+	width:70%;
+}
+
+.content div{
+	margin:20px;
+}
+
+/*Gamification Lab*/
+.labsGamification{
+	
+	cursor:pointer;
+	background:purple;
+	width:100%;
+	margin:0 auto;
+	display:flex;
+	box-shadow:0px 0px 10px #d1d1d1;
+}
+
+.labsGamificationPic{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.labsGamificationPic:before,
+.labsGamificationPic:after{
+  position: absolute;
+  content: "";
+  display: block;
+  width: 3em;
+  height: 3em;  
+}
+
+.labsGamificationPic{
+	background-image:url("/assets/img/game.jpg");
+	position: relative;
+	-webkit-clip-path: polygon(0 4%, 95% 0, 99% 100%, 4% 93%);
+	clip-path: polygon(0 4%, 95% 0, 99% 100%, 4% 93%);
+}
+
+.labsGamificationText{
+	background-color:rgba(255,255,255,0.3);
+	width:60%;
+}
+
+/*IXD Lab*/
+.labsIXD{
+	cursor:pointer;
+	background:green;
+	width:100%;
+	margin:0 auto;
+	padding:25px;
+	display:flex;
+	box-shadow:0px 0px 10px #d1d1d1;
+}
+
+.labsIXDPic{
+	width:40%;
+	background: url("/assets/img/ixd.jpg");
+	background-size: cover;
+}
+
+.labsIXDText{
+	background-color:rgba(255,255,255,0.3);
+	width:60%;
+}
+
+
+/*Technology Lab*/
+.labsTechnology{
+	cursor:pointer;
+	background:blue;
+	width:100%;
+	margin:0 auto;
+	padding:25px;
+	display:flex;
+	box-shadow:0px 0px 10px #d1d1d1;
+}
+
+.labsTechnologyPic{
+	width:40%;
+	background: url("/assets/img/iot.jpg");
+	background-size: cover;
+}
+
+.labsTechnologyText{
+	background-color:rgba(255,255,255,0.3);
+	width:60%;
+}
+
+/*Software Development Lab*/
+.labsSoftware{
+	cursor:pointer;
+	background:orange;
+	width:100%;
+	margin:0 auto;
+	padding:25px;
+	display:flex;
+	box-shadow:0px 0px 10px #d1d1d1;
+}
+
+.labsSoftwarePic{
+	width:40%;
+	background: url("/assets/img/soft.jpg");
+	background-size: cover;
+}
+
+.labsSoftwareText{
+	background-color:rgba(255,255,255,0.3);
+	width:60%;
+}
+
