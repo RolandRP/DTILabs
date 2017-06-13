@@ -1,3 +1,9 @@
+---
+---
+
+
+{% include base.html %}
+
 
 :root {
   --lab-colour: rgba(0, 153, 255, 1);
@@ -17,7 +23,7 @@
 }
 
 .bgimg-1 {
-  background: url("/assets/img/iot.jpg");
+  background: url("{{base}}/assets/img/iot.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
