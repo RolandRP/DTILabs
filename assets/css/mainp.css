@@ -5,8 +5,8 @@
 {% include base.html %}
 
 
-@import url("{{base}}/main.css");
-@import url("{{base}}/nav.css");
+@import url("{{base}}/assets/css/main.css");
+@import url("{{base}}/assets/css/nav.css");
 
 .div1 {
   min-width: 45%;
