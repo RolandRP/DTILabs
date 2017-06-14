@@ -4,8 +4,8 @@
 ### https://rolandrp.github.io/DTILabs/index.html
 
 
-![Pilt DTI Laborite uuest lehest](assets/img/mainpage.gif)
-![Oleme ka mobiilisõbralikud](assets/img/mainpagemobiil.png)
+![Pilt DTI Laborite uuest lehest](/assets/img/mainpage.gif)
+![Oleme ka mobiilisõbralikud](/assets/img/mainpagemobiil.png)
 
 ## Eesmärk ja lühikirjeldus
 TLÜ DTI laboritel on mida näidata ja nad tahavad seda jagada oma sihtgruppidega, kooliga, õpilaste ja õpetajatega. Selleks on neil aga vaja esindust veebis.
