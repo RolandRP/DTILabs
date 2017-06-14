@@ -16,7 +16,8 @@
     {% include nav.html %}
 
     <div class="content">
-      <h2>Events</h2>
+		<h2>Events</h2>
+		<div class="eventsContent">
 		{% for event in site.eventNames %}
 			{% if forloop.last == true %}
 			{% else %}
@@ -37,10 +38,10 @@
 						<h3>{{site.eventNames[forloop.index]}}</h3>
 						<p>{{site.eventDesc[forloop.index]}}</p>
 					</div>
-					
 				</div>
-				{% endif%}
+			{% endif%}
 		{% endfor %}
+		</div>
     </div>
 
     {% include footer.html %}
