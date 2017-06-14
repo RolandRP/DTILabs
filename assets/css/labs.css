@@ -290,7 +290,6 @@ a{
 	height:100%;
 	min-height: inherit;
 	transition: box-shadow 0.5s, margin 0.5s;
-	/*right: -80px;*/
 }
 
 .labsSoftwareText{
@@ -363,7 +362,7 @@ a{
 	-moz-box-shadow: 20px 0px 0px 0px rgba(235,225,112,1);
 	box-shadow: 20px 0px 0px 0px rgba(235,225,112,1);
 }
-
+/* Justify text in divs*/
 
 
 @media only screen and (max-width: 750px) {
