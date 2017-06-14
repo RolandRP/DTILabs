@@ -11,10 +11,54 @@ th {
     color: white;
 }
 table#t01 {
-    width: 99%;    
+    width: 100%;    
     background-color: #ccdcff;
 	/*box-shadow: 0 0 10px #000;*/
 }
 th, td{
     border-bottom: 2px solid #4d88ff;
+}
+
+.Maps{
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	margin-top: 20px;
+}
+
+.pic1{
+	width: 50%;
+	height: auto;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.pic2{
+	width: 50%;
+	height: auto;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.img{
+	margin: 20px;
+	border: 20px;
+	border-style: solid;
+	border-color: #80aaff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+img:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
