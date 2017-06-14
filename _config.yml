@@ -41,10 +41,10 @@ eventNames:
     
 eventDates:
     - LEAVE EMPTY
-    - 1 JULY
-    - 8 JULY
-    - 10 JULY
-    - 8 AUGUST
+    - 1<br>JULY
+    - 8<br>JULY
+    - 10<br>JULY
+    - 8<br>AUGUST
     
 eventTimes:
     - LEAVE EMPTY
