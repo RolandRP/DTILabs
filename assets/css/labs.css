@@ -17,6 +17,7 @@ a{
 	margin:auto;
 	padding:20px;
 	width:93%;
+
 }
 .content p {
 	margin:0;
@@ -31,7 +32,9 @@ a{
 	width:100%;
 	display: flex;
 	position: relative;
-	min-height: 150px
+	min-height: 150px;
+	transition: box-shadow 0.5s, margin 0.5s;
+
 }
 
 .labsGamificationLeft{
@@ -75,6 +78,7 @@ a{
 	width:100%;
 	height:100%;
 	min-height: inherit;
+	transition: box-shadow 0.5s, margin 0.5s;
 	/*right: -80px;*/
 }
 
@@ -86,6 +90,7 @@ a{
 	height: inherit;
 	padding-right:150px;
 	margin-left: 60px;
+	margin-bottom: 10px;
 }
 
 /*IXD Lab*/
@@ -97,6 +102,7 @@ a{
 	display: flex;
 	position: relative;
 	min-height: 150px;
+	transition: box-shadow 0.5s, margin 0.5s;
 }
 
 .labsIXDRight{
@@ -140,6 +146,7 @@ a{
 	width:100%;
 	height:100%;
 	min-height: inherit;
+	transition: box-shadow 0.5s, margin 0.5s;
 	/*right: -80px;*/
 }
 .labsIXDLeft h2 {
@@ -158,6 +165,8 @@ a{
 	flex-direction: column;
 	padding-left:150px;
 	text-align: left;
+	margin-right: 60px;
+	margin-bottom: 10px;
 }
 
 /*Technology Lab*/
@@ -169,6 +178,7 @@ a{
 	display: flex;
 	position: relative;
 	min-height: 150px;
+	transition: box-shadow 0.5s, margin 0.5s;
 }
 
 .labsTechnologyLeft{
@@ -181,6 +191,7 @@ a{
 	overflow: hidden;
 	float: left;
 	position: relative;
+
 }
 
 .labsTechnologyPic{
@@ -212,6 +223,7 @@ a{
 	width:100%;
 	height:100%;
 	min-height: inherit;
+	transition: box-shadow 0.5s, margin 1s;
 	/*right: -80px;*/
 }
 
@@ -223,6 +235,7 @@ a{
 	height: inherit;
 	padding-right:150px;
 	margin-left: 60px;
+	margin-bottom: 10px;
 }
 
 /*Software Development Lab*/
@@ -233,6 +246,7 @@ a{
 	display: flex;
 	position: relative;
 	min-height: 150px;
+	transition: box-shadow 0.5s, margin 0.5s;
 }
 
 .labsSoftwareRight{
@@ -275,7 +289,7 @@ a{
 	width:100%;
 	height:100%;
 	min-height: inherit;
-	/*right: -80px;*/
+	transition: box-shadow 0.5s, margin 0.5s;
 }
 
 .labsSoftwareText{
@@ -291,10 +305,65 @@ a{
 	padding-left:150px;
 	text-align: left;
 	float: left;
+	margin-right: 60px;
+	margin-bottom: 10px;
 }
 .labsSoftwareLeft h2 {
 	width: 100%;
 }
+
+/* Hovers*/
+
+.labsGamification:hover{
+	margin-left:20px;
+	-webkit-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+    -moz-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+    box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+}
+.labsGamification:hover .labsGamificationRight{
+	margin-left:20px;
+	-webkit-box-shadow: -20px 0px 0px 0px rgba(112,73,112,1);
+	-moz-box-shadow: -20px 0px 0px 0px rgba(112,73,112,1);
+	box-shadow: -20px 0px 0px 0px rgba(112,73,112,1);
+}
+.labsIXD:hover{
+	margin-left:20px;
+	-webkit-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+    -moz-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+    box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+}
+.labsIXD:hover .labsIXDLeft{
+	margin-right:10px;
+	-webkit-box-shadow: 30px 0px 0px 0px rgba(68,138,96,1);
+	-moz-box-shadow: 30px 0px 0px 0px rgba(68,138,96,1);
+	box-shadow: 30px 0px 0px 0px rgba(68,138,96,1);
+}
+.labsTechnology:hover{
+	margin-left:20px;
+	-webkit-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+    -moz-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+    box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+}
+.labsTechnology:hover .labsTechnologyRight{
+	margin-left:20px;
+	-webkit-box-shadow: -20px 0px 0px 0px rgba(65,98,138,1);
+	-moz-box-shadow: -20px 0px 0px 0px rgba(65,98,138,1);
+	box-shadow: -20px 0px 0px 0px rgba(65,98,138,1);
+}
+.labsSoftware:hover{
+	margin-left:20px;
+	-webkit-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+    -moz-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+    box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+}
+.labsSoftware:hover .labsSoftwareLeft{
+	margin-right:10px;
+	-webkit-box-shadow: 20px 0px 0px 0px rgba(235,225,112,1);
+	-moz-box-shadow: 20px 0px 0px 0px rgba(235,225,112,1);
+	box-shadow: 20px 0px 0px 0px rgba(235,225,112,1);
+}
+/* Justify text in divs*/
+
 
 @media only screen and (max-width: 750px) {
 	.content{
@@ -483,89 +552,4 @@ a{
 }
 
 
-/*
-.labsGamification{
-	
-	cursor:pointer;
-	background:rgba(124,70,145,0.7);
-	width:100%;
-	margin:0 auto;
-	display:flex;
-}
 
-.labsGamificationPic{
-	width:40%;
-	background-image:url("/assets/img/game.jpg");
-	background-size:cover;
-}
-
-.labsGamificationText{
-	background-color:rgba(255,255,255,0.2);
-	width:60%;
-}
-*/
-/*IXD Lab*/
-/*
-.labsIXD{
-	cursor:pointer;
-	background:rgba(146,180,87,0.8);
-	width:100%;
-	margin:0 auto;
-	display:flex;
-}
-
-.labsIXDPic{
-	width:40%;
-	background: url("/assets/img/ixd.jpg");
-	background-size: cover;
-}
-
-.labsIXDText{
-	background-color:rgba(255,255,255,0.3);
-	width:60%;
-}
-*/
-
-/*Technology Lab*/
-/*
-.labsTechnology{
-	cursor:pointer;
-	background:rgba(41,128,185,0.7);
-	width:100%;
-	margin:0 auto;
-	display:flex;
-}
-
-.labsTechnologyPic{
-	width:40%;
-	background: url("/assets/img/iot.jpg");
-	background-size: cover;
-}
-
-.labsTechnologyText{
-	background-color:rgba(255,255,255,0.3);
-	width:60%;
-}
-*/
-
-/*Software Development Lab*/
-/*
-.labsSoftware{
-	cursor:pointer;
-	background:rgba(243,156,18,0.7);
-	width:100%;
-	margin:0 auto;
-	display:flex;
-}
-
-.labsSoftwarePic{
-	width:40%;
-	background: url("/assets/img/soft.jpg");
-	background-size: cover;
-}
-
-.labsSoftwareText{
-	background-color:rgba(255,255,255,0.3);
-	width:60%;
-}
-*/
