@@ -18,16 +18,20 @@ a{
 	padding:20px;
 	width:93%;
 }
+.content p {
+	margin:0;
+}
 
 
 /*Gamification Lab*/
 .labsGamification{
 	margin-bottom:20px;
 	overflow: hidden;
-	height:200px;
+	height:auto;
 	width:100%;
 	display: flex;
 	position: relative;
+	min-height: 150px
 }
 
 .labsGamificationLeft{
@@ -70,6 +74,7 @@ a{
 	position: relative;
 	width:100%;
 	height:100%;
+	min-height: inherit;
 	/*right: -80px;*/
 }
 
@@ -79,16 +84,19 @@ a{
 	-o-transform: skew(-20deg);
 	background: none;
 	height: inherit;
+	padding-right:150px;
+	margin-left: 60px;
 }
 
 /*IXD Lab*/
 .labsIXD{
 	margin-bottom:20px;
 	overflow: hidden;
-	height:200px;
+	height:auto;
 	width:100%;
 	display: flex;
 	position: relative;
+	min-height: 150px;
 }
 
 .labsIXDRight{
@@ -131,7 +139,11 @@ a{
 	position: relative;
 	width:100%;
 	height:100%;
+	min-height: inherit;
 	/*right: -80px;*/
+}
+.labsIXDLeft h2 {
+	width: 100%;
 }
 
 .labsIXDText{
@@ -141,19 +153,22 @@ a{
 	background: none;
 	height: inherit;
 	display: flex;
-	align-items: left;
+	align-items: center;
 	justify-content: left;
 	flex-direction: column;
+	padding-left:150px;
+	text-align: left;
 }
 
 /*Technology Lab*/
 .labsTechnology{
 	margin-bottom:20px;
 	overflow: hidden;
-	height:200px;
+	height:auto;
 	width:100%;
 	display: flex;
 	position: relative;
+	min-height: 150px;
 }
 
 .labsTechnologyLeft{
@@ -196,6 +211,7 @@ a{
 	position: relative;
 	width:100%;
 	height:100%;
+	min-height: inherit;
 	/*right: -80px;*/
 }
 
@@ -205,15 +221,18 @@ a{
 	-o-transform: skew(-20deg);
 	background: none;
 	height: inherit;
+	padding-right:150px;
+	margin-left: 60px;
 }
 
 /*Software Development Lab*/
 .labsSoftware{
 	overflow: hidden;
-	height:200px;
+	height:auto;
 	width:100%;
 	display: flex;
 	position: relative;
+	min-height: 150px;
 }
 
 .labsSoftwareRight{
@@ -255,6 +274,7 @@ a{
 	position: relative;
 	width:100%;
 	height:100%;
+	min-height: inherit;
 	/*right: -80px;*/
 }
 
@@ -265,10 +285,15 @@ a{
 	background: none;
 	height: inherit;
 	display: flex;
-	align-items: center;
+	align-items: right;
 	justify-content: center;
 	flex-direction: column;
-	left:80px;
+	padding-left:150px;
+	text-align: left;
+	float: left;
+}
+.labsSoftwareLeft h2 {
+	width: 100%;
 }
 
 @media only screen and (max-width: 750px) {
