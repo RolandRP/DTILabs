@@ -6,10 +6,11 @@
 @import url("{{base}}/assets/css/nav.css");
 
 body, html {
-  margin: 0;
+  margin: auto;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
   height: 100%;
+  max-width: 1400px;
 }
 
 .header-container {
