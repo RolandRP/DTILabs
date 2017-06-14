@@ -6,8 +6,39 @@
 
 
 
-.personL, .personR {
-  margin: 80px 10px;
+.person {
+  display: inline-block;
+  margin: 5px;
+  background: white;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 2px 8px 8px 5px lightgrey;
+}
+
+.person:hover {
+  display: inline-block;
+  margin: 5px;
+  background: white;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 2px 8px 8px 7px lightgrey;
+}
+
+.name {
+  display: inline-block;
+  width: 150px;
+  border-bottom: 1px solid grey;
+}
+
+.occ {
+  display: inline-block;
+  width: 150px;
+}
+
+.content {
+  text-align: center;
 }
 
 .user {
@@ -18,15 +49,9 @@
   /width: auto;
   /height: auto;
   padding: 0px;
-  margin: 10px;
-}
+  margin: 10px auto;
+  border-radius: 50%;
 
-.personL .user {
-  float: left;
-}
-
-.personR .user {
-  float: right;
 }
 
 p {

@@ -1,4 +1,12 @@
-nav {
+#minNav {
+  display: none;
+}
+
+#minNavT {
+  display: none;
+}
+
+#fullNav {
   display: inline;
   margin: 5px 10px;
   background: lightblue;
@@ -7,7 +15,7 @@ nav {
   padding: 0;
 }
 
-nav ul {
+#fullNav ul {
   text-decoration: none;
   list-style: none;
   padding: 0;
@@ -34,12 +42,12 @@ nav ul {
   background: deepskyblue;
 }
 
-nav ul li a {
+#fullNav ul li a {
   text-decoration: none;
   color: #566c73;
 }
 
-nav ul li a:hover {
+#fullNav ul li a:hover {
   color: white;
 }
 
@@ -100,4 +108,193 @@ nav ul li a:hover {
 
 #Res:hover .ResDropCont {
   display: block;
+}
+
+@media only screen and (max-width: 750px) {
+
+  #fullNav{
+    display: none;
+  }
+
+  #minNav {
+    display: block;
+    margin-bottom: 100px;
+
+  }
+
+  #minNavT {
+    display: block;
+    display: block;
+    position: relative;
+    top: 25px;
+    left: 20px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #minNavT input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  #minNavT span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: black;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+  #minNavT span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+
+  #minNavT span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+
+  /*
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  #minNavT input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: black;
+  }
+
+  /*
+   * But let's hide the middle one.
+   */
+  #minNavT input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+  #minNavT input:checked ~ span:nth-last-child(2)
+  {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+
+    #minMainUl {
+    position: absolute;
+    width: 200px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: lightblue;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  .minTier1 {
+    padding: 0px 0;
+    font-size: 16px;
+
+  }
+
+  .minTier1 a {
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    color:black;
+  }
+
+  .minTier1 a:hover {
+    background: deepskyblue;
+  }
+
+  #minTier2Ul {
+    /display: none;
+    list-style-type: none;
+  }
+
+  #minTier2Ul a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #minTier2Ul li {
+    margin: 0px 0 0 -30px;
+    padding: 0px;
+  }
+  /*
+   * And let's fade it in from the left
+   */
+  #minNavT input:checked ~ ul
+  {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+  }
+
+  .minEventsDropCont {
+    display: none;
+  }
+
+  .minLabsDropCont {
+    display: none;
+  }
+
+  .minResDropCont {
+    display: none;
+  }
+
+  #minEvents:hover .minEventsDropCont {
+    display: block;
+  }
+
+  #minLabs:hover .minLabsDropCont {
+    display: block;
+  }
+
+  #minRes:hover .minResDropCont {
+    display: block;
+  }
+
 }

@@ -22,7 +22,7 @@
 }
 
 .bgimg-1 {
-  background: url("{{base}}/assets/img/research.jpeg");
+  background: url("{{base}}/assets/img/research.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -144,7 +144,7 @@
 
   .header-container {
     overflow: hidden;
-    margin: 5px;
+    margin: 10px 5px 5px 5px;
     display: relative;
   }
 
