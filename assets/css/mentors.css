@@ -8,22 +8,23 @@
 
 .person {
   display: inline-block;
-  margin: 5px;
+  margin: 10px;
   background: white;
   width: 200px;
   height: 200px;
   text-align: center;
-  box-shadow: 2px 8px 8px 5px lightgrey;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .person:hover {
   display: inline-block;
-  margin: 5px;
+  margin: 10px;
   background: white;
   width: 200px;
   height: 200px;
   text-align: center;
-  box-shadow: 2px 8px 8px 7px lightgrey;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .name {
