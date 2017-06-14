@@ -13,7 +13,7 @@ Meie lahendus siis on uus veebileht mis tutvustab nii laboreid kui nende inimesi
 
 
 ## Kasutatud tehnoloogiad ja nende versioonid
-Projekti teostamiseks kasutame Jekyll staatiliste lehtede generaatorit (jekyll 3.4.3). Programmeerimiskeelte kohapealt kasutame HTML-i ja selle "preprocessori" markdown ning CSS'i ja SASS-i. Lisaks annab lehe "buildimisel" dünaamikat Liquid.
+Projekti teostamiseks kasutame Jekyll staatiliste lehtede generaatorit (jekyll 3.4.3). Programmeerimiskeelte kohapealt kasutame HTML-i ja selle "preprocessori" MarkDown ning CSS'i ja SASS-i. Lisaks annab lehe "buildimisel" dünaamikat Liquid ja YAML.
 
 
 ## Projekti teostajad
@@ -33,4 +33,4 @@ Projekti teostamiseks kasutame Jekyll staatiliste lehtede generaatorit (jekyll 3
 
 ### Projekt teostatud TLU Informaatika õppekava Tarkvaraarenduse Praktika aine raames.
 
-### Kõik õigused kuuluvad TLÜ Digitehnoloogiate Instituudile
+### Kõik õigused kuuluvad TLÜ Digitehnoloogiate Instituudile (k.a litsentsiseadmise õigus).
