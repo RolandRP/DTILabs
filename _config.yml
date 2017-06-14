@@ -30,3 +30,52 @@ exclude:
   - Gemfile
   - Gemfile.lock
 root: /octo-5
+
+#events variables
+eventNames:
+    - LEAVE EMPTY
+    - Labhack
+    - UX Bootcamp
+    - Koosolek
+    - Ns tallamine
+    
+eventDates:
+    - LEAVE EMPTY
+    - 1 JULY
+    - 8 JULY
+    - 10 JULY
+    - 8 AUGUST
+    
+eventTimes:
+    - LEAVE EMPTY
+    - "10.00"
+    - "14.00"
+    - "10.15"
+    - "17.30"
+    
+eventRooms:
+    - LEAVE EMPTY
+    - A-666
+    - A-666
+    - A-666
+    - A-666
+    
+eventLabs:
+    - LEAVE EMPTY
+    - IXD
+    - Software
+    - Technology
+    - Gamification
+    
+eventDesc:
+    - LEAVE EMPTY
+    - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    

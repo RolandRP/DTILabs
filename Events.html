@@ -8,6 +8,7 @@
     {% include base.html %}
     <meta charset="utf-8">
     <link rel="stylesheet" href="{{base}}/assets/css/main.css">
+    <link rel="stylesheet" href="{{base}}/assets/css/nav.css">
     <link rel="stylesheet" href="{{base}}/assets/css/events.css">
     <title>Labs</title>
   </head>
@@ -15,26 +16,31 @@
     {% include nav.html %}
 
     <div class="content">
-      <h3>Events</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+      <h2>Events</h2>
+		{% for event in site.eventNames %}
+			{% if forloop.last == true %}
+			{% else %}
+				<div class="eventCard">
+					<div class="eventTime">
+						<h3>{{site.eventDates[forloop.index]}}</h3>
+						<h4>{{site.eventTimes[forloop.index]}}</h4>
+					</div>
+					<div class="eventRoom">
+						<h3>Room</h3>
+						<p>{{site.eventRooms[forloop.index]}}</p>
+					</div>
+					<div class="eventLabs">
+						<h3>Lab</h3>
+						<p>{{site.eventLabs[forloop.index]}}</p>
+					</div>
+					<div class="eventInfo">
+						<h3>{{site.eventNames[forloop.index]}}</h3>
+						<p>{{site.eventDesc[forloop.index]}}</p>
+					</div>
+					
+				</div>
+				{% endif%}
+		{% endfor %}
     </div>
 
     {% include footer.html %}
