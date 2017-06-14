@@ -22,14 +22,10 @@ element.style{
 
 .inBox1{
 	width: auto;
-	padding: 180px;
+	height: auto;
 	background-color: rgba(124,70,145,0.6);
 	display: flex;
-	padding-left: 10px;
 	border-radius: 0 0 10px 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
 	color: rgb(88,88,88);
 }
 
@@ -55,14 +51,10 @@ element.style{
 
 .inBox2{
 	width: auto;
-	padding: 180px;
+	height: auto;
 	background-color: rgba(146,180,87,0.6);
 	display: flex;
-	padding-left: 10px;
 	border-radius: 0 0 10px 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
 	color: rgb(88,88,88);
 }
 
@@ -80,14 +72,10 @@ element.style{
 
 .inBox3{
 	width: auto;
-	padding: 180px;
+	height: auto;
 	background-color: rgba(41,128,185,0.6);
 	display: flex;
-	padding-left: 10px;
 	border-radius: 0 0 10px 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
 	color: rgb(88,88,88);
 }
 
@@ -105,14 +93,10 @@ element.style{
 
 .inBox4{
 	width: auto;
-	padding: 180px;
+	height: auto;
 	background-color: rgba(243,156,18,0.6);
 	display: flex;
-	padding-left: 10px;
 	border-radius: 0 0 10px 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
 	color: rgb(88,88,88);
 }
 
@@ -128,4 +112,4 @@ element.style{
 	color: rgb(88,88,88);
 }
 
-
+background-color: rgba(41,128,185,0.6)
