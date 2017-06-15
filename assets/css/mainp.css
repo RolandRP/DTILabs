@@ -162,11 +162,6 @@
   }
 
   .bgimg-1 {
-    background: url("../../assets/img/research.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    height: inherit;
     left: 0px;
     right: -40px;
     -webkit-transform: skew(-20deg);
@@ -239,5 +234,28 @@
 
   .border {
     color: black;
+  }
+
+  .button {
+    margin: auto 42% 30px auto;
+  }
+
+  .nav-dots {
+    width: 100%;
+    bottom: 10px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    text-align: center;
+  }
+
+  .nav-dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 15px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6)
   }
 }
