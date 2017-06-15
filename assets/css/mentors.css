@@ -4,6 +4,25 @@
 
 {% include base.html %}
 
+.content {
+  text-align: center;
+
+}
+
+h3 {
+  width: auto;
+  margin: auto;
+}
+
+.mentors {
+  width: auto;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 .game {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -32,52 +51,64 @@
 }
 
 .ixd {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(8,153,0,0.12), 0 1px 2px rgba(8,153,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.ixd:hover {
+/*.ixd:hover {
   box-shadow: 0 14px 28px rgba(8, 153, 0, 0.25), 0 10px 10px rgba(8, 153, 0, 0.22);
-}
+}*/
 
 
 .person {
-  display: inline-block;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
+  padding: 0;
   background: white;
-  width: 200px;
-  height: 200px;
+  min-width: 220px;
+  min-height: 220px;
+  max-width: 250px;
+  max-height: 250px;
   text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .person:hover {
   display: inline-block;
   margin: 10px;
+  padding: 0;
   background: white;
-  width: 200px;
-  height: 200px;
+  min-width: 220px;
+  min-height: 220px;
+  max-width: 250px;
+  max-height: 250px;
   text-align: center;
-
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .name {
   display: inline-block;
-  width: 150px;
-  border-bottom: 1px solid grey;
+  width: 200px;
 }
 
 .occ {
   display: inline-block;
-  width: 150px;
+  width: 200px;
+  border-bottom: 1px solid grey;
 }
 
-.content {
-  text-align: center;
+.lab {
+  display: inline-block;
+  width: 200px;
 }
+
+
 
 .user {
-  display: block;
   background: url('{{base}}/assets/img/user.jpeg');
+  background-size: cover;
   width: 125px;
   height: 125px;
   /width: auto;
@@ -94,11 +125,11 @@ p {
 }
 
 .overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 100%;
-  height: 140%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 200ms;
   visibility: hidden;
@@ -166,22 +197,24 @@ p {
 a {
   color: grey;
   text-decoration: none;
+  margin: 0px;
 }
 
 .popup .user {
   display: block;
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 125px;
+  min-height: 125px;
   margin: auto;
-
 }
 
 .popup .name {
   width: 100%;
-  margin: 10px 0 0px 0;
+  margin: 30px 0 0px 0;
 }
 
 .popup .occ {
   width: 100%;
-  margin: 0 0 10px 0;
+  margin: 0 0 30px 0;
 }
