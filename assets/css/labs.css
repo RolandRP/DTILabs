@@ -21,6 +21,7 @@ a{
 }
 .content p {
 	margin:0;
+
 }
 
 
@@ -33,8 +34,8 @@ a{
 	display: flex;
 	position: relative;
 	min-height: 150px;
-	transition: box-shadow 0.5s, margin 0.5s;
-
+	background: none;
+	transition:transform 0.5s, width 0.5s;
 }
 
 .labsGamificationLeft{
@@ -47,6 +48,7 @@ a{
 	overflow: hidden;
 	float: left;
 	position: relative;
+	transition:margin 0.5s;
 }
 
 .labsGamificationPic{
@@ -78,7 +80,7 @@ a{
 	width:100%;
 	height:100%;
 	min-height: inherit;
-	transition: box-shadow 0.5s, margin 0.5s;
+	transition:margin 0.5s;
 	/*right: -80px;*/
 }
 
@@ -102,7 +104,7 @@ a{
 	display: flex;
 	position: relative;
 	min-height: 150px;
-	transition: box-shadow 0.5s, margin 0.5s;
+	transition:transform 0.5s, width 0.5s;
 }
 
 .labsIXDRight{
@@ -115,6 +117,7 @@ a{
 	overflow: hidden;
 	float: left;
 	position: relative;
+	transition:margin 0.5s;
 }
 
 .labsIXDPic{
@@ -146,7 +149,7 @@ a{
 	width:100%;
 	height:100%;
 	min-height: inherit;
-	transition: box-shadow 0.5s, margin 0.5s;
+	transition:margin 0.5s;
 	/*right: -80px;*/
 }
 .labsIXDLeft h2 {
@@ -178,7 +181,7 @@ a{
 	display: flex;
 	position: relative;
 	min-height: 150px;
-	transition: box-shadow 0.5s, margin 0.5s;
+	transition:transform 0.5s, width 0.5s;
 }
 
 .labsTechnologyLeft{
@@ -191,6 +194,7 @@ a{
 	overflow: hidden;
 	float: left;
 	position: relative;
+	transition:margin 0.5s;
 
 }
 
@@ -223,8 +227,8 @@ a{
 	width:100%;
 	height:100%;
 	min-height: inherit;
-	transition: box-shadow 0.5s, margin 1s;
-	/*right: -80px;*/
+	transition:margin 0.5s;
+		/*right: -80px;*/
 }
 
 .labsTechnologyText{
@@ -246,7 +250,7 @@ a{
 	display: flex;
 	position: relative;
 	min-height: 150px;
-	transition: box-shadow 0.5s, margin 0.5s;
+	transition:transform 0.5s, width 0.5s;
 }
 
 .labsSoftwareRight{
@@ -259,6 +263,7 @@ a{
 	overflow: hidden;
 	float: left;
 	position: relative;
+	transition:margin 0.5s;
 }
 
 .labsSoftwarePic{
@@ -289,7 +294,7 @@ a{
 	width:100%;
 	height:100%;
 	min-height: inherit;
-	transition: box-shadow 0.5s, margin 0.5s;
+	transition:margin 0.5s;
 }
 
 .labsSoftwareText{
@@ -307,6 +312,7 @@ a{
 	float: left;
 	margin-right: 60px;
 	margin-bottom: 10px;
+	--widthForChange:width;
 }
 .labsSoftwareLeft h2 {
 	width: 100%;
@@ -315,53 +321,57 @@ a{
 /* Hovers*/
 
 .labsGamification:hover{
-	margin-left:20px;
-	-webkit-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
-    -moz-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
-    box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+	/*margin-left:5px;*/
+    width: 104%;
+    transform:translate(-2%, 0%);
 }
 .labsGamification:hover .labsGamificationRight{
 	margin-left:20px;
-	-webkit-box-shadow: -20px 0px 0px 0px rgba(112,73,112,1);
-	-moz-box-shadow: -20px 0px 0px 0px rgba(112,73,112,1);
-	box-shadow: -20px 0px 0px 0px rgba(112,73,112,1);
 }
+
+
+
+
 .labsIXD:hover{
-	margin-left:20px;
-	-webkit-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
-    -moz-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
-    box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+	/*margin-left:5px;*/
+    width: 104%;
+    transform:translate(-2%, 0%);
+}
+.labsIXD:hover .labsIXDRight{
+	margin-left:10px;
 }
 .labsIXD:hover .labsIXDLeft{
-	margin-right:10px;
-	-webkit-box-shadow: 30px 0px 0px 0px rgba(68,138,96,1);
-	-moz-box-shadow: 30px 0px 0px 0px rgba(68,138,96,1);
-	box-shadow: 30px 0px 0px 0px rgba(68,138,96,1);
+	margin-right: 10px;
 }
+
+
 .labsTechnology:hover{
-	margin-left:20px;
-	-webkit-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
-    -moz-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
-    box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+	/*margin-left:5px;*/
+    width: 104%;
+    transform:translate(-2%, 0%);
 }
 .labsTechnology:hover .labsTechnologyRight{
-	margin-left:20px;
-	-webkit-box-shadow: -20px 0px 0px 0px rgba(65,98,138,1);
-	-moz-box-shadow: -20px 0px 0px 0px rgba(65,98,138,1);
-	box-shadow: -20px 0px 0px 0px rgba(65,98,138,1);
+	margin-left:10px;
 }
+.labsTechnology:hover .labsTechnologyLeft{
+	margin-right: 10px;
+}
+
+
 .labsSoftware:hover{
-	margin-left:20px;
-	-webkit-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
-    -moz-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
-    box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
+	/*margin-left:5px;*/
+    width: 104%;
+    transform:translate(-2%, 0%);
+    
+}
+.labsSoftware:hover .labsSoftwareRight{
+	margin-left:10px;
 }
 .labsSoftware:hover .labsSoftwareLeft{
-	margin-right:10px;
-	-webkit-box-shadow: 20px 0px 0px 0px rgba(235,225,112,1);
-	-moz-box-shadow: 20px 0px 0px 0px rgba(235,225,112,1);
-	box-shadow: 20px 0px 0px 0px rgba(235,225,112,1);
+	margin-right: 10px;
 }
+
+
 /* Justify text in divs*/
 
 
@@ -402,6 +412,7 @@ a{
 		height:100%;
 		/*right: -80px;*/
 	}
+
 
 	.labsGamificationText{
 		margin-top:-20px;
