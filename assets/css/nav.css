@@ -62,7 +62,8 @@
   position: absolute;
   background-color: teal;
   min-width: 120px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 0px;
   margin: 0px;
   z-index: 1;
@@ -134,7 +135,9 @@
     z-index: 1;
 
     -webkit-user-select: none;
-    user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
   }
 
   #minNavT input {
@@ -166,21 +169,38 @@
 
     z-index: 1;
 
-    transform-origin: 4px 0px;
+    -webkit-transform-origin: 4px 0px;
+
+            transform-origin: 4px 0px;
+
+    -webkit-transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease,
+                -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease,
+                -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease,
+                -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
 
   #minNavT span:first-child
   {
-    transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
   }
 
   #minNavT span:nth-last-child(2)
   {
-    transform-origin: 0% 100%;
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
   }
 
   /*
@@ -190,7 +210,8 @@
   #minNavT input:checked ~ span
   {
     opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
+    -webkit-transform: rotate(45deg) translate(-2px, -1px);
+            transform: rotate(45deg) translate(-2px, -1px);
     background: black;
   }
 
@@ -200,7 +221,8 @@
   #minNavT input:checked ~ span:nth-last-child(3)
   {
     opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+            transform: rotate(0deg) scale(0.2, 0.2);
   }
 
   /*
@@ -209,7 +231,8 @@
   #minNavT input:checked ~ span:nth-last-child(2)
   {
     opacity: 1;
-    transform: rotate(-45deg) translate(0, -1px);
+    -webkit-transform: rotate(-45deg) translate(0, -1px);
+            transform: rotate(-45deg) translate(0, -1px);
   }
 
   /*
@@ -229,10 +252,19 @@
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
 
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
+    -webkit-transform-origin: 0% 0%;
+
+            transform-origin: 0% 0%;
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
 
   .minTier1 {
@@ -271,7 +303,8 @@
    */
   #minNavT input:checked ~ ul
   {
-    transform: scale(1.0, 1.0);
+    -webkit-transform: scale(1.0, 1.0);
+            transform: scale(1.0, 1.0);
     opacity: 1;
   }
 
