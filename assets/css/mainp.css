@@ -144,7 +144,7 @@
 @media only screen and (max-width: 750px) {
 
   html {
-    min-width: 400px;
+    min-width: 320px;
   }
 
   .header-container {
@@ -206,7 +206,7 @@
   }
 
   .labName {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
     color: black;
     /*background: rgb(161, 167, 175, 0.5);
@@ -215,13 +215,13 @@
   }
 
   .caption2 {
-      margin: ;
+      margin: 10% 15% 5% 15%;
       text-align: center;
   }
 
   .caption2-M {
-    margin: auto;
-    padding: 5px;
+    margin: 0;
+    padding: 0px;
     border: 5px solid black;
     /background: rgb(161, 167, 175, 0.5);
     text-align: center;
@@ -239,10 +239,11 @@
 
   .border {
     color: black;
+    margin: 0 10%;
   }
 
   .button {
-    margin: auto 42% 30px auto;
+    margin: auto 42% 40px auto;
   }
 
   .nav-dots {
