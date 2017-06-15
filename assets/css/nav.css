@@ -16,6 +16,7 @@
 }
 
 #fullNav ul {
+  font-size: 20px;
   text-decoration: none;
   list-style: none;
   padding: 0;
@@ -90,7 +91,7 @@
   display: inline-block;
   text-align: center;
   margin: auto;
-  width: 120px;
+  width: 140px;
   padding: 5px 2px 5px 0px;
 }
 
