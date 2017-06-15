@@ -40,6 +40,7 @@
 }
 
 .div2 {
+  min-width: 70%;
   width: auto;
   height: 400px;
   margin: 0 -80px 0 10px;
@@ -86,6 +87,10 @@
 }
 
 .caption2 {
-    margin: auto 100px auto 80px;
-    color: white;
+  margin: auto 24% auto 12%;
+  color: white;
+}
+
+.border {
+  color: white;
 }
