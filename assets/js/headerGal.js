@@ -34,7 +34,7 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
 				 for(var i=0;i<4;i++){
 					 document.getElementsByClassName("nav-dot")[i].style.background = "rgba(0, 0, 0, 0.6)";
 				 }
-				 document.getElementsByClassName("nav-dot")[counter-1].style.background = "green";
+				 document.getElementsByClassName("nav-dot")[counter-1].style.background = "rgba(0, 0, 0, 1)";
 				 
 			//right swipe
 			}else{
@@ -44,9 +44,9 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
 					counter = 4;
 				}
 				for(var i=0;i<4;i++){
-					document.getElementsByClassName("nav-dot")[i].style.background = "rgba(0, 0, 0, 0.6)";
+					document.getElementsByClassName("nav-dot")[i].style.background = "rgba(0, 0, 0, 0.4)";
 				}
-				document.getElementsByClassName("nav-dot")[counter-1].style.background = "green";
+				document.getElementsByClassName("nav-dot")[counter-1].style.background = "rgba(0, 0, 0, 1)";
 			}                       
 		}
 		//üles-alla swipe

@@ -1,0 +1,52 @@
+.resource {
+  width: auto;
+  margin: 5px auto;
+  padding: 0;
+  list-style-type: none;
+  -webkit-column-count: 3;
+          column-count: 3;
+}
+
+.resource li {
+  padding: 1px 0 0px 15px;
+}
+
+/*.resource li:nth-child(odd) {
+  background: rgba(0,0,0,0.05);
+}*/
+
+.game {
+  border-left: 3px solid rgba(143, 0, 179, 1);
+}
+
+.tech {
+  border-left: 3px solid rgba(0, 153, 255, 1);
+}
+
+.soft {
+  border-left: 3px solid rgba(255, 153, 0, 1);
+}
+
+.ixd {
+  border-left: 3px solid rgba(8, 153, 0, 1);
+}
+
+.resource h3 {
+  margin: 0;
+  padding: 5px 0 5px 5px;
+}
+
+.resource h4 {
+  margin: 0;
+  padding: 5px 0 5px 5px;
+}
+
+.resource a {
+  text-decoration: none;
+  color: grey;
+}
+
+.resource a:hover {
+  color: grey;
+  text-shadow: 0px 0px 0px black;
+}

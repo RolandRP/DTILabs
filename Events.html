@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{base}}/assets/css/main.css">
     <link rel="stylesheet" href="{{base}}/assets/css/nav.css">
     <link rel="stylesheet" href="{{base}}/assets/css/events.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Events</title>
   </head>
   <body>
@@ -24,7 +25,7 @@
 				<div class="eventCard">
 					<div class="eventTime">
 						<h3>{{site.eventDates[forloop.index]}}</h3>
-						<h4>{{site.eventTimes[forloop.index]}}</h4>
+						<h4 class="mobTimeNumbers">{{site.eventTimes[forloop.index]}}</h4>
 					</div>
 					<div class="eventRoom">
 						<h3>Room</h3>
@@ -35,9 +36,15 @@
 						<p>{{site.eventLabs[forloop.index]}}</p>
 					</div>
 					<div class="eventInfo">
-						<h3>{{site.eventNames[forloop.index]}}</h3>
-						<p>{{site.eventDesc[forloop.index]}}</p>
+						<h3 class="eventName">{{site.eventNames[forloop.index]}}</h3>
+						<p class="eventDesc" id="popupOpen">{{site.eventDesc[forloop.index]}}</p>
 					</div>
+					<a href="#popupOpen">
+						<div class="popupArrowContainer">
+							<img class="popupOpenArrow" src="{{base}}/assets/img/arrow-down.svg" alt="Arrow down"/>
+							<img class="popupCloseArrow" src="{{base}}/assets/img/arrow-up.svg" alt="Arrow down"/>
+						</div>
+					</a>
 				</div>
 			{% endif%}
 		{% endfor %}
