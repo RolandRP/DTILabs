@@ -1,7 +1,12 @@
+.content {
+  text-align: center;
+}
+
 .resource {
   width: auto;
-  margin: 5px auto;
+  margin: 50px auto;
   padding: 0;
+  text-align: left;
   list-style-type: none;
   -webkit-column-count: 2;
           column-count: 2;
@@ -43,15 +48,28 @@
 }
 
 .naming {
-  width: 50%;
-  padding-left: 18px;
+  width: 70%;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.countH {
+  width: 20%;
+  text-align: center;
+}
+
+.count {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  margin: auto;
 }
 
 .resource a {
   display: inline-block;
   text-decoration: none;
   color: grey;
-  width: 50%;
+  width: 70%;
 }
 
 .resource a:hover {
@@ -62,4 +80,22 @@
 .icon {
   position: absolute;
   margin: 0 0 0 -20px;
+  display: block;
+}
+
+@media only screen and (max-width: 750px) {
+
+  .content {
+    min-height: 80%;
+    margin: 0 0 0 30px;
+  }
+
+  .resource {
+    width: auto;
+    margin: 50px auto;
+    padding: 0;
+    list-style-type: none;
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
 }
