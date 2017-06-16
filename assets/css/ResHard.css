@@ -48,19 +48,26 @@
 }
 
 .naming {
-  width: 70%;
+  width: 50%;
   text-align: center;
   padding: 0 5px;
 }
 
 .countH {
-  width: 20%;
+  width: 15%;
   text-align: center;
 }
 
 .count {
   display: inline-block;
-  width: 20%;
+  width: 15%;
+  text-align: center;
+  margin: auto;
+}
+
+.os {
+  display: inline-block;
+  width: 30%;
   text-align: center;
   margin: auto;
 }
@@ -69,7 +76,7 @@
   display: inline-block;
   text-decoration: none;
   color: grey;
-  width: 70%;
+  width: 50%;
 }
 
 .resource a:hover {
@@ -87,7 +94,7 @@
 
   .content {
     min-height: 80%;
-    margin: 0 0 0 30px;
+    margin: 0 5px 0 30px;
   }
 
   .resource {
@@ -98,4 +105,20 @@
     -webkit-column-count: 1;
             column-count: 1;
   }
+
+  /*li .game:first-of-type {
+    margin-top: 100px;
+  }
+
+  li .tech:first-of-type {
+    margin-top: 100px;
+  }
+
+  li .soft:first-of-type {
+    margin-top: 100px;
+  }
+
+  li .ixd:first-of-type {
+    margin-top: 100px;
+  }*/
 }
