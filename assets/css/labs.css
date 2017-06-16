@@ -21,6 +21,8 @@ a{
 }
 .content p {
 	margin:0;
+	height: inherit;
+	width: 750px;
 
 }
 
@@ -88,9 +90,9 @@ a{
 	width:100%;
 	height:100%;
 	min-height: inherit;
-	transition:margin 0.5s;
-	-webkit-transition: margin 0.5s;
-	-moz-transition:margin 0.5s;
+	transition:margin 0.5s, background 0.5s linear;
+	-webkit-transition: margin 0.5s, background 0.5s linear;
+	-moz-transition:margin 0.5s, background 0.5s linear;
 
 }
 
@@ -167,8 +169,8 @@ a{
 	height:100%;
 	min-height: inherit;
 	transition:margin 0.5s;
-	-webkit-transition: margin 0.5s;
-	-moz-transition:margin 0.5s;
+	-webkit-transition: margin 0.5s, background 0.5s linear;
+	-moz-transition:margin 0.5s, background 0.5s linear;
 
 	/*right: -80px;*/
 }
@@ -264,8 +266,8 @@ a{
 	height:100%;
 	min-height: inherit;
 	transition:margin 0.5s;
-	-webkit-transition: margin 0.5s;
-	-moz-transition:margin 0.5s;
+	-webkit-transition: margin 0.5s, background 0.5s linear;
+	-moz-transition:margin 0.5s, background 0.5s linear;
 
 }
 
@@ -340,8 +342,8 @@ a{
 	height:100%;
 	min-height: inherit;
 	transition:margin 0.5s;
-	-webkit-transition: margin 0.5s;
-	-moz-transition:margin 0.5s;
+	-webkit-transition: margin 0.5s, background 0.5s linear;
+	-moz-transition:margin 0.5s, background 0.5s linear;
 
 }
 
@@ -371,6 +373,10 @@ a{
 	margin-bottom: 10px;
 	--widthForChange:width;
 }
+
+
+/*Hovers*/
+
 .labsSoftwareLeft h2 {
 	width: 100%;
 }
@@ -381,12 +387,12 @@ a{
 }
 .labsGamification:hover .labsGamificationRight{
 	margin-left:20px;
+	background:rgba(124,70,145,0.45);
 }
 .labsGamification:hover .labsGamificationLeft{
 	margin-left:20px;
 
 }
-
 
 
 
@@ -399,8 +405,10 @@ a{
 }
 .labsIXD:hover .labsIXDLeft{
 	margin-right: 10px;
+	background:rgba(146,180,87,0.45);
 
 }
+
 
 
 .labsTechnology:hover{
@@ -409,10 +417,12 @@ a{
 }
 .labsTechnology:hover .labsTechnologyRight{
 	margin-left:10px;
+	background:rgba(41,128,185,0.45);
 }
 .labsTechnology:hover .labsTechnologyLeft{
 	margin-right: 10px;
 }
+
 
 
 
@@ -427,11 +437,29 @@ a{
 }
 .labsSoftware:hover .labsSoftwareLeft{
 	margin-right: 10px;
+	background:rgba(243,156,18,0.45);
 
 }
 
 
 /* Justify text in divs*/
+@media only screen and (max-width: 1260px){
+	.content p{
+		width: 600px;
+		height: inherit;
+		overflow-y: hidden;
+		text-overflow: ellipsis;
+	}
+}
+@media only screen and (max-width: 996px){
+	.content p{
+		width: 400px;
+		height: inherit;
+		overflow-y: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
 
 
 @media only screen and (max-width: 750px) {
