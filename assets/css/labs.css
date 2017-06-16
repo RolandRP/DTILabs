@@ -38,10 +38,9 @@ a{
 	min-height: 150px;
 	background: none;
 	transition:transform 0.5s, width 0.5s;
-	-webkit-transition: margin 0.5s, -webkit-box-shadow 0.5s;
-	transition: margin 0.5s, -webkit-box-shadow 0.5s;
-	transition: box-shadow 0.5s, margin 0.5s;
-	transition: box-shadow 0.5s, margin 0.5s, -webkit-box-shadow 0.5s;
+	-webkit-transition: width 0.5s, transform 0.5s;
+	-moz-transition: width 0.5s, transform 0.5s;
+
 
 }
 
@@ -56,6 +55,8 @@ a{
 	float: left;
 	position: relative;
 	transition:margin 0.5s;
+	-webkit-transition:margin 0.5s;
+	-moz-transition:margin 0.5s;
 }
 
 .labsGamificationPic{
@@ -87,15 +88,10 @@ a{
 	width:100%;
 	height:100%;
 	min-height: inherit;
-
 	transition:margin 0.5s;
+	-webkit-transition: margin 0.5s;
+	-moz-transition:margin 0.5s;
 
-	-webkit-transition: margin 0.5s, -webkit-box-shadow 0.5s;
-	transition: margin 0.5s, -webkit-box-shadow 0.5s;
-	transition: box-shadow 0.5s, margin 0.5s;
-	transition: box-shadow 0.5s, margin 0.5s, -webkit-box-shadow 0.5s;
-
-	/*right: -80px;*/
 }
 
 .labsGamificationText{
@@ -121,10 +117,9 @@ a{
 	position: relative;
 	min-height: 150px;
 	transition:transform 0.5s, width 0.5s;
-	-webkit-transition: margin 0.5s, -webkit-box-shadow 0.5s;
-	transition: margin 0.5s, -webkit-box-shadow 0.5s;
-	transition: box-shadow 0.5s, margin 0.5s;
-	transition: box-shadow 0.5s, margin 0.5s, -webkit-box-shadow 0.5s;
+	-webkit-transition: transform 0.5s, width 0.5s;
+	-moz-transition:transform 0.5s, width 0.5s;
+;
 }
 
 .labsIXDRight{
@@ -138,6 +133,8 @@ a{
 	float: left;
 	position: relative;
 	transition:margin 0.5s;
+	-webkit-transition:margin 0.5s;
+	-moz-transition:margin 0.5s;
 }
 
 .labsIXDPic{
@@ -169,13 +166,9 @@ a{
 	width:100%;
 	height:100%;
 	min-height: inherit;
-
 	transition:margin 0.5s;
-
-	-webkit-transition: margin 0.5s, -webkit-box-shadow 0.5s;
-	transition: margin 0.5s, -webkit-box-shadow 0.5s;
-	transition: box-shadow 0.5s, margin 0.5s;
-	transition: box-shadow 0.5s, margin 0.5s, -webkit-box-shadow 0.5s;
+	-webkit-transition: margin 0.5s;
+	-moz-transition:margin 0.5s;
 
 	/*right: -80px;*/
 }
@@ -219,13 +212,9 @@ a{
 	display: flex;
 	position: relative;
 	min-height: 150px;
-
 	transition:transform 0.5s, width 0.5s;
-
-	-webkit-transition: margin 0.5s, -webkit-box-shadow 0.5s;
-	transition: margin 0.5s, -webkit-box-shadow 0.5s;
-	transition: box-shadow 0.5s, margin 0.5s;
-	transition: box-shadow 0.5s, margin 0.5s, -webkit-box-shadow 0.5s;
+	-webkit-transition: width 0.5s, transform 0.5s;
+	-moz-transition:width 0.5s, transform 0.5s;
 
 }
 
@@ -240,6 +229,8 @@ a{
 	float: left;
 	position: relative;
 	transition:margin 0.5s;
+	-webkit-transition:margin 0.5s;
+	-moz-transition:margin 0.5s;
 
 }
 
@@ -272,15 +263,9 @@ a{
 	width:100%;
 	height:100%;
 	min-height: inherit;
-
 	transition:margin 0.5s;
-		/*right: -80px;*/
-
-	-webkit-transition: margin 1s, -webkit-box-shadow 0.5s;
-	transition: margin 1s, -webkit-box-shadow 0.5s;
-	transition: box-shadow 0.5s, margin 1s;
-	transition: box-shadow 0.5s, margin 1s, -webkit-box-shadow 0.5s;
-	/*right: -80px;*/
+	-webkit-transition: margin 0.5s;
+	-moz-transition:margin 0.5s;
 
 }
 
@@ -305,12 +290,9 @@ a{
 	display: flex;
 	position: relative;
 	min-height: 150px;
-
 	transition:transform 0.5s, width 0.5s;
-	-webkit-transition: margin 0.5s, -webkit-box-shadow 0.5s;
-	transition: margin 0.5s, -webkit-box-shadow 0.5s;
-	transition: box-shadow 0.5s, margin 0.5s;
-	transition: box-shadow 0.5s, margin 0.5s, -webkit-box-shadow 0.5s;
+	-webkit-transition: transform 0.5s, width 0.5s;
+	-moz-transition: transform 0.5s, width 0.5s;
 
 }
 
@@ -325,6 +307,8 @@ a{
 	float: left;
 	position: relative;
 	transition:margin 0.5s;
+	-webkit-transition: transform 0.5s, width 0.5s;
+	-moz-transition:transform 0.5s, width 0.5s;
 }
 
 .labsSoftwarePic{
@@ -355,13 +339,9 @@ a{
 	width:100%;
 	height:100%;
 	min-height: inherit;
-
 	transition:margin 0.5s;
-
-	-webkit-transition: margin 0.5s, -webkit-box-shadow 0.5s;
-	transition: margin 0.5s, -webkit-box-shadow 0.5s;
-	transition: box-shadow 0.5s, margin 0.5s;
-	transition: box-shadow 0.5s, margin 0.5s, -webkit-box-shadow 0.5s;
+	-webkit-transition: margin 0.5s;
+	-moz-transition:margin 0.5s;
 
 }
 
@@ -395,25 +375,15 @@ a{
 	width: 100%;
 }
 
-/* Hovers*/
-
 .labsGamification:hover{
-
-	/*margin-left:5px;*/
     width: 104%;
     transform:translate(-2%, 0%);
 }
 .labsGamification:hover .labsGamificationRight{
 	margin-left:20px;
-
-	margin-left:20px;
-	-webkit-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
-    box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
 }
-.labsGamification:hover .labsGamificationRight{
+.labsGamification:hover .labsGamificationLeft{
 	margin-left:20px;
-	-webkit-box-shadow: -20px 0px 0px 0px rgba(112,73,112,1);
-	box-shadow: -20px 0px 0px 0px rgba(112,73,112,1);
 
 }
 
@@ -421,8 +391,6 @@ a{
 
 
 .labsIXD:hover{
-
-	/*margin-left:5px;*/
     width: 104%;
     transform:translate(-2%, 0%);
 }
@@ -432,21 +400,10 @@ a{
 .labsIXD:hover .labsIXDLeft{
 	margin-right: 10px;
 
-	margin-left:20px;
-	-webkit-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
-    box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
-}
-.labsIXD:hover .labsIXDLeft{
-	margin-right:10px;
-	-webkit-box-shadow: 30px 0px 0px 0px rgba(68,138,96,1);
-	box-shadow: 30px 0px 0px 0px rgba(68,138,96,1);
-
 }
 
 
 .labsTechnology:hover{
-
-	/*margin-left:5px;*/
     width: 104%;
     transform:translate(-2%, 0%);
 }
@@ -455,22 +412,12 @@ a{
 }
 .labsTechnology:hover .labsTechnologyLeft{
 	margin-right: 10px;
-
-	margin-left:20px;
-	-webkit-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
-    box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
 }
-.labsTechnology:hover .labsTechnologyRight{
-	margin-left:20px;
-	-webkit-box-shadow: -20px 0px 0px 0px rgba(65,98,138,1);
-	box-shadow: -20px 0px 0px 0px rgba(65,98,138,1);
 
-}
 
 
 .labsSoftware:hover{
 
-	/*margin-left:5px;*/
     width: 104%;
     transform:translate(-2%, 0%);
     
@@ -480,15 +427,6 @@ a{
 }
 .labsSoftware:hover .labsSoftwareLeft{
 	margin-right: 10px;
-
-	margin-left:20px;
-	-webkit-box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
-    box-shadow: -20px 18px 5px -9px rgba(0,0,0,0.46);
-}
-.labsSoftware:hover .labsSoftwareLeft{
-	margin-right:10px;
-	-webkit-box-shadow: 20px 0px 0px 0px rgba(235,225,112,1);
-	box-shadow: 20px 0px 0px 0px rgba(235,225,112,1);
 
 }
 
