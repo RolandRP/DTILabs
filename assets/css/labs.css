@@ -28,8 +28,25 @@ a{
 
 }
 
+/*Icons*/
+.fa-gamepad {
+ 	color: rgba(143, 0, 179, 1);
+}
+.fa-cogs {
+	color: rgba(0, 153, 255, 1);
+}
+.fa-code{
+	color: rgba(255, 153, 0, 1);
+}
+.fa-lightbulb-o{
+	color: rgba(8, 153, 0, 1);
+}
+
 
 /*Gamification Lab*/
+
+/*Parent div*/
+
 .labsGamification{
 	margin-bottom:20px;
 	overflow: hidden;
@@ -46,9 +63,9 @@ a{
 	-moz-transition: width 0.5s, transform 0.5s;
 	border-right: 5px solid;
 	border-right-color: rgba(143, 0, 179, 1);
-
-
 }
+
+/*Child divs*/
 
 .labsGamificationLeft{
 	min-width: 40%;
@@ -103,8 +120,6 @@ a{
 
 }
 
-.labsGamificationRight p{
-}
 .labsGamificationText{
 	-webkit-transform: skew(-20deg);
 	-moz-transform: skew(-20deg);
@@ -116,7 +131,12 @@ a{
 	margin-bottom: 10px;
 }
 
+
+
 /*IXD Lab*/
+
+/*Parent div*/
+
 .labsIXD{
 	margin-bottom:20px;
 	overflow: hidden;
@@ -132,8 +152,9 @@ a{
 	-moz-transition:transform 0.5s, width 0.5s;
 	border-left: 5px solid;
 	border-left-color: rgba(8, 153, 0, 1);
-;
 }
+
+/*Child divs*/
 
 .labsIXDRight{
 	min-width: 40%;
@@ -217,6 +238,9 @@ a{
 }
 
 /*Technology Lab*/
+
+/*Parent div*/
+
 .labsTechnology{
 	margin-bottom:20px;
 	overflow: hidden;
@@ -234,6 +258,8 @@ a{
 	border-right-color: rgba(0, 153, 255, 1);
 
 }
+
+/*Child divs*/
 
 .labsTechnologyLeft{
 	min-width: 40%;
@@ -300,6 +326,9 @@ a{
 }
 
 /*Software Development Lab*/
+
+/*Parent div*/
+
 .labsSoftware{
 	overflow: hidden;
 	height:auto;
@@ -316,6 +345,8 @@ a{
 	border-left-color: rgba(255, 153, 0, 1);
 
 }
+
+/*Child divs*/
 
 .labsSoftwareRight{
 	min-width: 40%;
@@ -460,7 +491,8 @@ a{
 }
 
 
-/* Justify text in divs*/
+/*Mobile view*/
+
 @media only screen and (max-width: 1260px){
 	.content p{
 		width: 600px;
