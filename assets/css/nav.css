@@ -242,12 +242,12 @@
 
     #minMainUl {
     position: absolute;
-    width: 200px;
+    width: 100%;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
 
-    background: lightblue;
+    background: white;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -280,10 +280,6 @@
     color:black;
   }
 
-  .minTier1 a:hover {
-    background: deepskyblue;
-  }
-
   #minTier2Ul {
     /display: none;
     list-style-type: none;
@@ -309,27 +305,14 @@
   }
 
   .minEventsDropCont {
-    display: none;
+    display: block;
   }
 
   .minLabsDropCont {
-    display: none;
+    display: block;
   }
 
   .minResDropCont {
-    display: none;
-  }
-
-  #minEvents:hover .minEventsDropCont {
     display: block;
   }
-
-  #minLabs:hover .minLabsDropCont {
-    display: block;
-  }
-
-  #minRes:hover .minResDropCont {
-    display: block;
-  }
-
 }
