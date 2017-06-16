@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url("{{base}}/assets/css/nav.css");
+@import url("{{base}}/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css");
 
 body, html {
   margin: auto;
