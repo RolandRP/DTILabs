@@ -491,7 +491,7 @@ a{
 }
 
 
-/*Mobile view*/
+/*Stop Text from moving*/
 
 @media only screen and (max-width: 1260px){
 	.content p{
@@ -519,37 +519,37 @@ a{
 	  }
 
 	.content{
-	margin-bottom:20px;
+	margin-bottom: 20px;
 	overflow: hidden;
-	height:auto;
-	width:320px;
+	height: auto;
+	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	position: relative;
 	min-height: 150px;
 	background: none;
-	transition:transform 0.5s, width 0.5s;
+	transition: transform 0.5s, width 0.5s;
 	-webkit-transition: width 0.5s, transform 0.5s;
 	-moz-transition: width 0.5s, transform 0.5s;
 	padding: 0;
 
 	}
 	.homepageNav{
-		width:320px;
+		width:100%;
 	}
 
 
 	/*Gamification*/
 
 	.labsGamification p{
-		width: 300px;
+		width: 93.75%;
 		margin-right: 5px;
 		margin-left: 5px;
 		text-align: center;
 	}
 	.labsGamification{
-		width: 310px;
+		width: 96.875%;
 		height: auto;
 		border-right: 5px;
 		border-right-color: white;
@@ -564,16 +564,16 @@ a{
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		max-width: 320px;
+		/*max-width: 320px;*/
 		margin: 0px;
 	}
 	.labsGamificationText{
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		width:310px;
+		width: 93.75%;
 		height: inherit;
-		max-width: 320px;
+		/*max-width: 320px;*/
 		text-overflow: ellipsis;
 		padding-right: 0px;
 		margin-left: 0px;
@@ -585,7 +585,7 @@ a{
 		text-align: center;
 	}
 	.labsGamification p{
-		width: 300px;
+		width: auto;
 		margin-right: 10px;
 		margin-left: 2px;
 		text-align: center;
@@ -594,7 +594,7 @@ a{
 	/*IDLAB*/
 
 	.labsIXD{
-		width: 305px;
+		width: 95.3125%;
 		height: auto;
 		border-right: 5px;
 		border-right-color: white;
@@ -609,7 +609,7 @@ a{
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		max-width: 320px;
+		/*max-width: 320px;*/
 		margin: 0px;
 		border-right: 5px;
 		border-right-color: white;
@@ -618,9 +618,9 @@ a{
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		width:310px;
+		width:96.875%;
 		height: inherit;
-		max-width: 320px;
+		/*max-width: 320px;*/
 		text-overflow: ellipsis;
 		padding-left: 0px;
 		margin-left: 0px;
@@ -632,7 +632,7 @@ a{
 		text-align: center;
 	}
 	.labsIXD p{
-		width: 300px;
+		width: 93.75%;
 		margin-right: 10px;
 		margin-left: 2px;
 		text-align: center;
@@ -641,7 +641,7 @@ a{
 	/*Technology*/
 
 	.labsTechnology{
-		width: 310px;
+		width: 96.875%;
 		height: auto;
 		border-right: 5px;
 		border-right-color: white;
@@ -656,16 +656,16 @@ a{
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		max-width: 320px;
+		/*max-width: 320px;*/
 		margin: 0px;
 	}
 	.labsTechnologyText{
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		width:310px;
+		width:96.875%;
 		height: inherit;
-		max-width: 320px;
+		/*max-width: 320px;*/
 		text-overflow: ellipsis;
 		padding-right: 0px;
 		margin-left: 0px;
@@ -677,7 +677,7 @@ a{
 		text-align: center;
 	}
 	.labsTechnology p{
-		width: 300px;
+		width: 93.75%;
 		margin-right: 10px;
 		margin-left: 2px;
 		text-align: center;
@@ -686,7 +686,7 @@ a{
 	/*Software*/
 
 	.labsSoftware{
-		width: 305px;
+		width: 95.3125%;
 		height: auto;
 	}
 
@@ -700,7 +700,7 @@ a{
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		max-width: 320px;
+		/*max-width: 320px;*/
 		margin: 0px;
 		border-right: 5px;
 		border-right-color: white;
@@ -709,9 +709,9 @@ a{
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		width:310px;
+		width:96.875%;
 		height: inherit;
-		max-width: 320px;
+		/*max-width: 320px;*/
 		text-overflow: ellipsis;
 		padding-left: 0px;
 		margin-left: 0px;
@@ -721,14 +721,76 @@ a{
 
 	.labsSoftware h2{
 		text-align: center;
-		width: 310px;
+		width: 96.875%;
 
 	}
 	.labsSoftware p{
-		width: 300px;
+		width: 93.75%;
 		margin-right: 10px;
 		margin-left: 2px;
 		text-align: center;
+	}
+
+	/*Hovers*/
+
+	.labsGamification:hover{
+	    width: 96.875%;
+	    transform:translate(0%, 0%);
+	}
+	.labsGamification:hover .labsGamificationRight{
+		margin-left:0px;
+		/*background:rgba(124,70,145,0.45);*/
+	}
+	.labsGamification:hover .labsGamificationLeft{
+		margin-left:0px;
+
+	}
+
+
+
+	.labsIXD:hover{
+	    width: 93.75%;
+	    transform:translate(0%, 0%);
+	}
+	.labsIXD:hover .labsIXDRight{
+		margin-left:0px;
+	}
+	.labsIXD:hover .labsIXDLeft{
+		margin-right: 0px;
+		/*background-color: rgba(203, 150, 0, 0.9);*/
+
+	}
+
+
+
+	.labsTechnology:hover{
+	    width: 96.875%;
+	    transform:translate(0%, 0%);
+	}
+	.labsTechnology:hover .labsTechnologyRight{
+		margin-left:0px;
+		/*background:rgba(41,128,185,0.45);*/
+	}
+	.labsTechnology:hover .labsTechnologyLeft{
+		margin-right: 0px;
+	}
+
+
+
+
+	.labsSoftware:hover{
+
+	    width: 93.75%;
+	    transform:translate(0%, 0%);
+	    
+	}
+	.labsSoftware:hover .labsSoftwareRight{
+		margin-left:0px;
+	}
+	.labsSoftware:hover .labsSoftwareLeft{
+		margin-right: 0px;
+		/*background:rgba(243,156,18,0.45);*/
+
 	}
 	
 }
