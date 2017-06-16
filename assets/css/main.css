@@ -3,11 +3,13 @@
 
 {% include base.html %}
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url("{{base}}/assets/css/nav.css");
 
 body, html {
   margin: auto;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  /*font: 400 15px/1.8 "Lato", sans-serif;*/
+  font: 400 15px/1.8 'Roboto', sans-serif;
   color: #777;
   height: 100%;
   max-width: 1400px;
@@ -16,6 +18,8 @@ body, html {
 .header-container {
   overflow: hidden;
   margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -48,17 +52,35 @@ p {
 footer {
   background: lightblue;
   text-align: center;
-  padding: 5px 10px 5px 10px;
-  margin: 30px 0;
+  padding: 10px 5px;
+  margin: 5% 0;
 }
 
 footer ul {
-  display: inline;
+  display: block;
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 footer ul li {
-  display: inline;
+  display: inline-block;
   text-align: center;
-  margin: 0 10%;
+  margin: 0 0%;
+  border-right: 1px solid grey;
+  padding: 0 4%;
+}
+
+footer ul li:last-of-type {
+  border-right: none;
+}
+
+@media only screen and (max-width: 765px) {
+  footer ul li {
+    border-right: none;
+  }
+
+  footer ul li:first-of-type {
+    border-right: 1px solid grey;
+  }
 }
