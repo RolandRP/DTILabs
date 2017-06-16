@@ -734,7 +734,7 @@ a{
 	/*Hovers*/
 
 	.labsGamification:hover{
-	    width: 96.875%;
+	    width: 93.75%;
 	    transform:translate(0%, 0%);
 	}
 	.labsGamification:hover .labsGamificationRight{
@@ -749,7 +749,7 @@ a{
 
 
 	.labsIXD:hover{
-	    width: 93.75%;
+	    width: 95.3125%;
 	    transform:translate(0%, 0%);
 	}
 	.labsIXD:hover .labsIXDRight{
@@ -780,7 +780,7 @@ a{
 
 	.labsSoftware:hover{
 
-	    width: 93.75%;
+	    width: 95.3125%;
 	    transform:translate(0%, 0%);
 	    
 	}
