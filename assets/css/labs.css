@@ -23,11 +23,30 @@ a{
 	margin:0;
 	height: inherit;
 	width: 750px;
+	min-height: 150px;
+	color:#777;
 
+}
+
+/*Icons*/
+.fa-gamepad {
+ 	color: rgba(143, 0, 179, 1);
+}
+.fa-cogs {
+	color: rgba(0, 153, 255, 1);
+}
+.fa-code{
+	color: rgba(255, 153, 0, 1);
+}
+.fa-lightbulb-o{
+	color: rgba(8, 153, 0, 1);
 }
 
 
 /*Gamification Lab*/
+
+/*Parent div*/
+
 .labsGamification{
 	margin-bottom:20px;
 	overflow: hidden;
@@ -42,9 +61,11 @@ a{
 	transition:transform 0.5s, width 0.5s;
 	-webkit-transition: width 0.5s, transform 0.5s;
 	-moz-transition: width 0.5s, transform 0.5s;
-
-
+	border-right: 5px solid;
+	border-right-color: rgba(143, 0, 179, 1);
 }
+
+/*Child divs*/
 
 .labsGamificationLeft{
 	min-width: 40%;
@@ -83,7 +104,7 @@ a{
 	-webkit-transform: skew(20deg);
 	-moz-transform: skew(20deg);
 	-o-transform: skew(20deg);
-	background:rgba(124,70,145,0.6);
+	background:#fafafa;
 	overflow: hidden;
 	float: right;
 	position: relative;
@@ -93,6 +114,9 @@ a{
 	transition:margin 0.5s, background 0.5s linear;
 	-webkit-transition: margin 0.5s, background 0.5s linear;
 	-moz-transition:margin 0.5s, background 0.5s linear;
+	border-left: 5px solid;
+	border-left-color: rgba(143, 0, 179, 1);
+
 
 }
 
@@ -107,7 +131,12 @@ a{
 	margin-bottom: 10px;
 }
 
+
+
 /*IXD Lab*/
+
+/*Parent div*/
+
 .labsIXD{
 	margin-bottom:20px;
 	overflow: hidden;
@@ -121,8 +150,11 @@ a{
 	transition:transform 0.5s, width 0.5s;
 	-webkit-transition: transform 0.5s, width 0.5s;
 	-moz-transition:transform 0.5s, width 0.5s;
-;
+	border-left: 5px solid;
+	border-left-color: rgba(8, 153, 0, 1);
 }
+
+/*Child divs*/
 
 .labsIXDRight{
 	min-width: 40%;
@@ -161,7 +193,7 @@ a{
 	-webkit-transform: skew(20deg);
 	-moz-transform: skew(20deg);
 	-o-transform: skew(20deg);
-	background:rgba(146,180,87,0.6);
+	background:#fafafa;
 	overflow: hidden;
 	float: right;
 	position: relative;
@@ -171,6 +203,8 @@ a{
 	transition:margin 0.5s;
 	-webkit-transition: margin 0.5s, background 0.5s linear;
 	-moz-transition:margin 0.5s, background 0.5s linear;
+	border-right: 5px solid;
+	border-right-color: rgba(8, 153, 0, 1);;
 
 	/*right: -80px;*/
 }
@@ -204,6 +238,9 @@ a{
 }
 
 /*Technology Lab*/
+
+/*Parent div*/
+
 .labsTechnology{
 	margin-bottom:20px;
 	overflow: hidden;
@@ -217,8 +254,12 @@ a{
 	transition:transform 0.5s, width 0.5s;
 	-webkit-transition: width 0.5s, transform 0.5s;
 	-moz-transition:width 0.5s, transform 0.5s;
+	border-right:5px solid;
+	border-right-color: rgba(0, 153, 255, 1);
 
 }
+
+/*Child divs*/
 
 .labsTechnologyLeft{
 	min-width: 40%;
@@ -258,7 +299,7 @@ a{
 	-webkit-transform: skew(20deg);
 	-moz-transform: skew(20deg);
 	-o-transform: skew(20deg);
-	background:rgba(41,128,185,0.6);
+	background:#fafafa;
 	overflow: hidden;
 	float: right;
 	position: relative;
@@ -268,6 +309,8 @@ a{
 	transition:margin 0.5s;
 	-webkit-transition: margin 0.5s, background 0.5s linear;
 	-moz-transition:margin 0.5s, background 0.5s linear;
+	border-left:5px solid;
+	border-left-color:rgba(0, 153, 255, 1);
 
 }
 
@@ -283,6 +326,9 @@ a{
 }
 
 /*Software Development Lab*/
+
+/*Parent div*/
+
 .labsSoftware{
 	overflow: hidden;
 	height:auto;
@@ -295,8 +341,12 @@ a{
 	transition:transform 0.5s, width 0.5s;
 	-webkit-transition: transform 0.5s, width 0.5s;
 	-moz-transition: transform 0.5s, width 0.5s;
+	border-left:5px solid;
+	border-left-color: rgba(255, 153, 0, 1);
 
 }
+
+/*Child divs*/
 
 .labsSoftwareRight{
 	min-width: 40%;
@@ -334,7 +384,7 @@ a{
 	-webkit-transform: skew(20deg);
 	-moz-transform: skew(20deg);
 	-o-transform: skew(20deg);
-	background:rgba(243,156,18,0.6);
+	background:#fafafa;
 	overflow: hidden;
 	float: right;
 	position: relative;
@@ -344,6 +394,8 @@ a{
 	transition:margin 0.5s;
 	-webkit-transition: margin 0.5s, background 0.5s linear;
 	-moz-transition:margin 0.5s, background 0.5s linear;
+	border-right: 5px solid;
+	border-right-color: rgba(255, 153, 0, 1);
 
 }
 
@@ -377,9 +429,6 @@ a{
 
 /*Hovers*/
 
-.labsSoftwareLeft h2 {
-	width: 100%;
-}
 
 .labsGamification:hover{
     width: 104%;
@@ -387,7 +436,7 @@ a{
 }
 .labsGamification:hover .labsGamificationRight{
 	margin-left:20px;
-	background:rgba(124,70,145,0.45);
+	/*background:rgba(124,70,145,0.45);*/
 }
 .labsGamification:hover .labsGamificationLeft{
 	margin-left:20px;
@@ -405,7 +454,7 @@ a{
 }
 .labsIXD:hover .labsIXDLeft{
 	margin-right: 10px;
-	background:rgba(146,180,87,0.45);
+	/*background-color: rgba(203, 150, 0, 0.9);*/
 
 }
 
@@ -417,7 +466,7 @@ a{
 }
 .labsTechnology:hover .labsTechnologyRight{
 	margin-left:10px;
-	background:rgba(41,128,185,0.45);
+	/*background:rgba(41,128,185,0.45);*/
 }
 .labsTechnology:hover .labsTechnologyLeft{
 	margin-right: 10px;
@@ -437,12 +486,13 @@ a{
 }
 .labsSoftware:hover .labsSoftwareLeft{
 	margin-right: 10px;
-	background:rgba(243,156,18,0.45);
+	/*background:rgba(243,156,18,0.45);*/
 
 }
 
 
-/* Justify text in divs*/
+/*Mobile view*/
+
 @media only screen and (max-width: 1260px){
 	.content p{
 		width: 600px;
@@ -461,226 +511,224 @@ a{
 }
 
 
-
+/*Mobile view/*/
 @media only screen and (max-width: 750px) {
+
+	html {
+	    min-width: 320px;
+	  }
+
 	.content{
-		margin:0;
-		padding:0;
-		width:100%;
+	margin-bottom:20px;
+	overflow: hidden;
+	height:auto;
+	width:320px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	min-height: 150px;
+	background: none;
+	transition:transform 0.5s, width 0.5s;
+	-webkit-transition: width 0.5s, transform 0.5s;
+	-moz-transition: width 0.5s, transform 0.5s;
+	padding: 0;
+
+	}
+	.homepageNav{
+		width:320px;
 	}
 
-	/*Gamification Lab*/
+
+	/*Gamification*/
+
+	.labsGamification p{
+		width: 300px;
+		margin-right: 5px;
+		margin-left: 5px;
+		text-align: center;
+	}
 	.labsGamification{
-		height:150px;
-		margin:0px;
-		width:100%;
-		position: relative;
+		width: 310px;
+		height: auto;
+		border-right: 5px;
+		border-right-color: white;
 	}
-
 	.labsGamificationLeft{
-		display:none;
+		display: none;
 	}
-
 	.labsGamificationPic{
-		display:none;
+		display: none;
 	}
-
 	.labsGamificationRight{
-		width:100%;
-		margin:0;
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		background:url("{{base}}/assets/img/game.jpg");
-		overflow: hidden;
-		float: none;
-		position: absolute;
-		width:100%;
-		height:100%;
-		/*right: -80px;*/
+		max-width: 320px;
+		margin: 0px;
 	}
-
-
 	.labsGamificationText{
-		margin-top:-20px;
-		background:rgba(200,200,200,0.2);
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
+		width:310px;
 		height: inherit;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		max-width: 320px;
+		text-overflow: ellipsis;
+		padding-right: 0px;
+		margin-left: 0px;
 	}
 
-	/*IXD Lab*/
+	/*Html Elements*/
+
+	.labsGamification h2{
+		text-align: center;
+	}
+	.labsGamification p{
+		width: 300px;
+		margin-right: 10px;
+		margin-left: 2px;
+		text-align: center;
+	}
+
+	/*IDLAB*/
+
 	.labsIXD{
-		height:150px;
-		margin:0px;
-		width:100%;
-		position: relative;
+		width: 305px;
+		height: auto;
+		border-right: 5px;
+		border-right-color: white;
 	}
-
 	.labsIXDRight{
-		display:none;
+		display: none;
 	}
-
 	.labsIXDPic{
-		display:none;
+		display: none;
 	}
-
-
 	.labsIXDLeft{
-		width:100%;
-		margin:0;
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		background:url("{{base}}/assets/img/ixd.jpg");
-		overflow: hidden;
-		float: none;
-		position: absolute;
-		width:100%;
-		height:100%;
-		/*right: -80px;*/
+		max-width: 320px;
+		margin: 0px;
+		border-right: 5px;
+		border-right-color: white;
 	}
-
 	.labsIXDText{
-		margin-top:-20px;
-		background:rgba(200,200,200,0.2);
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
+		width:310px;
 		height: inherit;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		max-width: 320px;
+		text-overflow: ellipsis;
+		padding-left: 0px;
+		margin-left: 0px;
 	}
 
-	/*Technology Lab*/
+	/*Html Elements*/
+
+	.labsIXD h2{
+		text-align: center;
+	}
+	.labsIXD p{
+		width: 300px;
+		margin-right: 10px;
+		margin-left: 2px;
+		text-align: center;
+	}
+
+	/*Technology*/
+
 	.labsTechnology{
-		height:150px;
-		margin:0px;
-		width:100%;
-		position: relative;
+		width: 310px;
+		height: auto;
+		border-right: 5px;
+		border-right-color: white;
 	}
-
 	.labsTechnologyLeft{
-		display:none;
+		display: none;
 	}
-
 	.labsTechnologyPic{
-		display:none;
+		display: none;
 	}
-
-
 	.labsTechnologyRight{
-		width:100%;
-		margin:0;
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		background:url("{{base}}/assets/img/iot.jpg");
-		overflow: hidden;
-		float: none;
-		position: absolute;
-		width:100%;
-		height:100%;
-		/*right: -80px;*/
+		max-width: 320px;
+		margin: 0px;
 	}
-
 	.labsTechnologyText{
-		margin-top:-20px;
-		background:rgba(200,200,200,0.2);
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
+		width:310px;
 		height: inherit;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		max-width: 320px;
+		text-overflow: ellipsis;
+		padding-right: 0px;
+		margin-left: 0px;
 	}
 
-	/*Software Development Lab*/
+	/*Html Elements*/
+
+	.labsTechnology h2{
+		text-align: center;
+	}
+	.labsTechnology p{
+		width: 300px;
+		margin-right: 10px;
+		margin-left: 2px;
+		text-align: center;
+	}
+
+	/*Software*/
+
 	.labsSoftware{
-		height:150px;
-		margin:0px;
-		width:100%;
-		position: relative;
+		width: 305px;
+		height: auto;
 	}
 
 	.labsSoftwareRight{
-		display:none;
+		display: none;
 	}
-
 	.labsSoftwarePic{
-		display:none;
+		display: none;
 	}
-
 	.labsSoftwareLeft{
-		width:100%;
-		margin:0;
 		-webkit-transform: skew(0deg);
 		-moz-transform: skew(0deg);
 		-o-transform: skew(0deg);
-		background:url("{{base}}/assets/img/soft.jpg");
-		overflow: hidden;
-		float: none;
-		position: absolute;
-		width:100%;
-		height:100%;
-		/*right: -80px;*/
+		max-width: 320px;
+		margin: 0px;
+		border-right: 5px;
+		border-right-color: white;
+	}
+	.labsSoftwareText{
+		-webkit-transform: skew(0deg);
+		-moz-transform: skew(0deg);
+		-o-transform: skew(0deg);
+		width:310px;
+		height: inherit;
+		max-width: 320px;
+		text-overflow: ellipsis;
+		padding-left: 0px;
+		margin-left: 0px;
 	}
 
-	.labsSoftwareText{
-		margin-top:-20px;
-		background:rgba(200,200,200,0.2);
-		-webkit-transform: skew(0deg);
-		-moz-transform: skew(0deg);
-		-o-transform: skew(0deg);
-		height: inherit;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+	/*Html Elements*/
+
+	.labsSoftware h2{
+		text-align: center;
+		width: 310px;
+
 	}
+	.labsSoftware p{
+		width: 300px;
+		margin-right: 10px;
+		margin-left: 2px;
+		text-align: center;
+	}
+	
 }
