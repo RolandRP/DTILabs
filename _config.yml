@@ -33,6 +33,7 @@ root: /octo-5
 
 # Collections
 collections:
+  mentors:
 
 #events variables
 eventNames:
