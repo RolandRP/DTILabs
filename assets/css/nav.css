@@ -12,7 +12,7 @@
 .mainNav a, .mainNav label {
   display: block;
   padding: 20px;
-  color: grey;
+  color: rgba(0,0,0,0.7);
   text-decoration: none;
   line-height: 20px;
 
@@ -65,6 +65,11 @@
 
 .Drop ul {
   padding-bottom:
+}
+
+.Drop a {
+  font-size: 12px;
+  color: rgba(0,0,0,0.6)
 }
 
 #nav { display: none; }
