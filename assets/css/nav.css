@@ -69,7 +69,7 @@
 
 #nav { display: none; }
 
-#nav:checked ~ .mainNav {
+#nav:checked ~ .mainMenu {
   max-height: 500px; /* This can be anything bigger than your .mainNav height. The transition duration works with this */
 }
 
