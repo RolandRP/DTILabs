@@ -12,31 +12,48 @@ var i;
 var counter = 0;
 var loadNext = true;
 var dontGo = false;
+var noListener = false;
 
 window.onload = function(){
 	caro1come();
-	document.getElementById("headerGallery").addEventListener("mouseover", function(){dontGo = true;});
+	document.getElementById("headerGallery").addEventListener("mouseover", changeDontGo);
 	document.getElementById("headerGallery").addEventListener("mouseout", function(){dontGo = false;});
 	navDots[0].addEventListener("click", function(){
 		loadNext = false;
+		document.getElementById("headerGallery").removeEventListener("mouseover", changeDontGo);
+		noListener = true;
+		dontGo = false;
 		i=1;
 		window['caro'+counter+'go']();
 	});
 	navDots[1].addEventListener("click", function(){
 		loadNext = false;
+		document.getElementById("headerGallery").removeEventListener("mouseover", changeDontGo);
+		noListener = true;
+		dontGo = false;
 		i=2;
 		window['caro'+counter+'go']();
 	});
 	navDots[2].addEventListener("click", function(){
 		loadNext = false;
+		document.getElementById("headerGallery").removeEventListener("mouseover", changeDontGo);
+		noListener = true;
+		dontGo = false;
 		i=3;
 		window['caro'+counter+'go']();
 	});
 	navDots[3].addEventListener("click", function(){
 		loadNext = false;
+		document.getElementById("headerGallery").removeEventListener("mouseover", changeDontGo);
+		noListener = true;
+		dontGo = false;
 		i=4;
 		window['caro'+counter+'go']();
 	});
+}
+
+function changeDontGo(){
+	dontGo = true;
 }
 
 function caro1come(){
@@ -58,6 +75,10 @@ function caro1come(){
 		div1.style.animation = "comeLeft 9.6s ease-in-out";
 		div2.style.animation = "comeRight 9.6s ease-in-out";
 		div1.addEventListener("webkitAnimationEnd", caro1go);
+	}
+	if(noListener){
+		document.getElementById("headerGallery").addEventListener("mouseover", changeDontGo);
+		noListener = false;
 	}
 }
 
@@ -95,6 +116,10 @@ function caro2come(){
 	div3.style.animation = "comeLeft 9.6s ease-in-out";
 	div4.style.animation = "comeRight 9.6s ease-in-out";
 	div3.addEventListener("webkitAnimationEnd", caro2go);
+	if(noListener){
+		document.getElementById("headerGallery").addEventListener("mouseover", changeDontGo);
+		noListener = false;
+	}
 }
 
 function caro2go(){
@@ -131,6 +156,10 @@ function caro3come(){
 	div5.style.animation = "comeLeft 9.6s ease-in-out";
 	div6.style.animation = "comeRight 9.6s ease-in-out";
 	div5.addEventListener("webkitAnimationEnd", caro3go);
+	if(noListener){
+		document.getElementById("headerGallery").addEventListener("mouseover", changeDontGo);
+		noListener = false;
+	}
 }
 
 function caro3go(){
@@ -167,6 +196,10 @@ function caro4come(){
 	div7.style.animation = "comeLeft 9.6s ease-in-out";
 	div8.style.animation = "comeRight 9.6s ease-in-out";
 	div7.addEventListener("webkitAnimationEnd", caro4go);
+	if(noListener){
+		document.getElementById("headerGallery").addEventListener("mouseover", changeDontGo);
+		noListener = false;
+	}
 }
 
 function caro4go(){
