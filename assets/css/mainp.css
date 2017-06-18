@@ -8,12 +8,6 @@
 @import url("{{base}}/assets/css/main.css");
 @import url("{{base}}/assets/css/nav.css");
 
-
-
-.headerGallery{
-	display:absolute;
-}
-
 .div3, .div4, .div5, .div6, .div7, .div8{
 	display:none;
 }
