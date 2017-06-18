@@ -33,18 +33,6 @@ p {
   margin: 10px;
 }
 
-.div3, .div4 {
-  display: none;
-}
-
-.div5, .div6 {
-  display: none;
-}
-
-.div7, .div8 {
-  display: none;
-}
-
 .content {
   min-height: 80%;
   margin: 50px;

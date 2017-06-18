@@ -23,17 +23,19 @@
 			{% if forloop.last == true %}
 			{% else %}
 				<div class="eventCard">
-					<div class="eventTime">
-						<h3>{{site.eventDates[forloop.index]}}</h3>
-						<h4 class="mobTimeNumbers">{{site.eventTimes[forloop.index]}}</h4>
-					</div>
-					<div class="eventRoom">
-						<h3>Room</h3>
-						<p>{{site.eventRooms[forloop.index]}}</p>
-					</div>
-					<div class="eventLabs">
-						<h3>Lab</h3>
-						<p>{{site.eventLabs[forloop.index]}}</p>
+					<div class="mobLayout">
+						<div class="eventTime">
+							<h3>{{site.eventDates[forloop.index]}}</h3>
+							<h4 class="mobTimeNumbers">{{site.eventTimes[forloop.index]}}</h4>
+						</div>
+						<div class="eventRoom">
+							<h3>Room</h3>
+							<p>{{site.eventRooms[forloop.index]}}</p>
+						</div>
+						<div class="eventLabs">
+							<h3>Lab</h3>
+							<p>{{site.eventLabs[forloop.index]}}</p>
+						</div>
 					</div>
 					<div class="eventInfo">
 						<h3 class="eventName">{{site.eventNames[forloop.index]}}</h3>

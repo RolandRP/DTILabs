@@ -8,9 +8,59 @@
 @import url("{{base}}/assets/css/main.css");
 @import url("{{base}}/assets/css/nav.css");
 
+
+
+.headerGallery{
+	display:absolute;
+}
+
+.div3, .div4, .div5, .div6, .div7, .div8{
+	display:none;
+}
+
 .div1 {
   min-width: 45%;
-  height: 400px;
+  height:400px;
+  margin: 0 0 0 -80px;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: #519090;
+  overflow: hidden;
+  float: left;
+  display:inline-block;
+  position: relative;
+}
+
+.div3 {
+  min-width: 45%;
+  height:400px;
+  margin: 0 0 0 -80px;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: #519090;
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+
+.div5 {
+  min-width: 45%;
+  height:400px;
+  margin: 0 0 0 -80px;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: #519090;
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+
+.div7 {
+  min-width: 45%;
+  height:400px;
   margin: 0 0 0 -80px;
   -webkit-transform: skew(20deg);
   -moz-transform: skew(20deg);
@@ -49,7 +99,50 @@
 
 .div2 {
   width: auto;
-  height: 400px;
+  height:400px;
+  margin: 0 -80px 0 10px;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: lightblue;
+  overflow: hidden;
+  float: right;
+  position: relative;
+  display:inline-block;
+  /*right: -80px;*/
+}
+
+.div4 {
+  width: auto;
+  height:400px;
+  margin: 0 -80px 0 10px;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: lightblue;
+  overflow: hidden;
+  float: right;
+  position: relative;
+  /*right: -80px;*/
+}
+
+.div6 {
+  width: auto;
+  height:400px;
+  margin: 0 -80px 0 10px;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: lightblue;
+  overflow: hidden;
+  float: right;
+  position: relative;
+  /*right: -80px;*/
+}
+
+.div8 {
+  width: auto;
+  height:400px;
   margin: 0 -80px 0 10px;
   -webkit-transform: skew(20deg);
   -moz-transform: skew(20deg);
@@ -301,4 +394,39 @@
     display: inline-block;
     background: rgba(0, 0, 0, 0.6)
   }
+}
+@media only screen and (min-width: 750px) {
+
+	@keyframes firstLeft{
+		0%{transform:translateX(0%) skew(20deg)}
+		100%{transform:translateX(0%) skew(20deg)}
+	}
+
+	@keyframes firstRight{
+		0%{transform:translateX(0%) skew(20deg)}
+		100%{transform:translateX(0%) skew(20deg)}
+
+	}
+
+	@keyframes comeLeft{
+		0%{transform:translateX(-85%) skew(0deg)}
+		8%{transform:translateX(0) skew(20deg)}
+		100%{transform:translateX(0) skew(20deg)}
+	}
+
+	@keyframes goLeft{
+		0%{transform:translateX(0) skew(20deg)}
+		100%{transform:translateX(-85%) skew(0deg)}
+	}
+
+	@keyframes comeRight{
+		0%{transform:translateX(85%) skew(0deg)}
+		8%{transform:translateX(0) skew(20deg)}
+		100%{transform:translateX(0) skew(20deg)}
+	}
+
+	@keyframes goRight{
+		0%{transform:translateX(0) skew(20deg)}
+		100%{transform:translateX(85%) skew(0deg)}
+	}
 }
