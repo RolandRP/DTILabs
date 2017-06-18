@@ -37,8 +37,12 @@ window.onload = function(){
 }
 
 function caro1come(){
-	loadNext = true;
 	counter = 1;
+	for(var i=0;i<navDots.length;i++){
+		navDots[i].style.background = "rgba(0, 0, 0, 0.6)";
+	}
+	navDots[counter-1].style.background = "rgba(0, 0, 0, 1)";
+	loadNext = true;
 	div1.style.display = "inline-block";
 	div2.style.display = "inline-block";
 	if(firstTime){
@@ -55,8 +59,8 @@ function caro1come(){
 
 function caro1go(){
 	div1.removeEventListener("webkitAnimationEnd", caro1go);
-	div1.style.animation = "goLeft 0.4s ease-in-out";
-	div2.style.animation = "goRight 0.4s ease-in-out";
+	div1.style.animation = "goLeft 0.3s ease-in-out";
+	div2.style.animation = "goRight 0.3s ease-in-out";
 	div1.addEventListener("webkitAnimationEnd", caro1end)
 }
 
@@ -72,8 +76,12 @@ function caro1end(){
 }
 
 function caro2come(){
-	loadNext = true;
 	counter = 2;
+	for(var i=0;i<navDots.length;i++){
+		navDots[i].style.background = "rgba(0, 0, 0, 0.6)";
+	}
+	navDots[counter-1].style.background = "rgba(0, 0, 0, 1)";
+	loadNext = true;
 	div3.style.display = "inline-block";
 	div4.style.display = "inline-block";
 	div3.style.animation = "comeLeft 9.6s ease-in-out";
@@ -83,8 +91,8 @@ function caro2come(){
 
 function caro2go(){
 	div3.removeEventListener("webkitAnimationEnd", caro2go);
-	div3.style.animation = "goLeft 0.4s ease-in-out";
-	div4.style.animation = "goRight 0.4s ease-in-out";
+	div3.style.animation = "goLeft 0.3s ease-in-out";
+	div4.style.animation = "goRight 0.3s ease-in-out";
 	div3.addEventListener("webkitAnimationEnd", caro2end)
 }
 
@@ -100,8 +108,12 @@ function caro2end(){
 }
 
 function caro3come(){
-	loadNext = true;
 	counter = 3;
+	for(var i=0;i<navDots.length;i++){
+		navDots[i].style.background = "rgba(0, 0, 0, 0.6)";
+	}
+	navDots[counter-1].style.background = "rgba(0, 0, 0, 1)";
+	loadNext = true;
 	div5.style.display = "inline-block";
 	div6.style.display = "inline-block";
 	div5.style.animation = "comeLeft 9.6s ease-in-out";
@@ -111,8 +123,8 @@ function caro3come(){
 
 function caro3go(){
 	div5.removeEventListener("webkitAnimationEnd", caro3go);
-	div5.style.animation = "goLeft 0.4s ease-in-out";
-	div6.style.animation = "goRight 0.4s ease-in-out";
+	div5.style.animation = "goLeft 0.3s ease-in-out";
+	div6.style.animation = "goRight 0.3s ease-in-out";
 	div5.addEventListener("webkitAnimationEnd", caro3end)
 }
 
@@ -128,8 +140,12 @@ function caro3end(){
 }
 
 function caro4come(){
-	loadNext = true;
 	counter = 4;
+	for(var i=0;i<navDots.length;i++){
+		navDots[i].style.background = "rgba(0, 0, 0, 0.6)";
+	}
+	navDots[counter-1].style.background = "rgba(0, 0, 0, 1)";
+	loadNext = true;
 	div7.style.display = "inline-block";
 	div8.style.display = "inline-block";
 	div7.style.animation = "comeLeft 9.6s ease-in-out";
@@ -139,8 +155,8 @@ function caro4come(){
 
 function caro4go(){
 	div7.removeEventListener("webkitAnimationEnd", caro4go);
-	div7.style.animation = "goLeft 0.4s ease-in-out";
-	div8.style.animation = "goRight 0.4s ease-in-out";
+	div7.style.animation = "goLeft 0.3s ease-in-out";
+	div8.style.animation = "goRight 0.3s ease-in-out";
 	div7.addEventListener("webkitAnimationEnd", caro4end)
 }
 
