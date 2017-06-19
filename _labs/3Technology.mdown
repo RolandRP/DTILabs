@@ -3,7 +3,7 @@
 title: labs
 labName: Technology
 styleRef: Techno
-ariaLabel: "Man wearing VR headset"
+ariaLabel: "Switchboard"
 iconType: fa fa-cogs fa-2x
 linkRef: Tech
 ---

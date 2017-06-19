@@ -3,7 +3,7 @@
 title: labs
 labName: Software
 styleRef: Soft
-ariaLabel: "Man wearing VR headset"
+ariaLabel: "World covered in data"
 iconType: fa fa-code fa-2x
 linkRef: Soft
 ---
