@@ -1,0 +1,10 @@
+---
+
+title: labs
+labName: Software
+styleRef: Soft
+ariaLabel: "Man wearing VR headset"
+iconType: fa fa-code fa-2x
+linkRef: Soft
+---
+SDLAB aims to support the exploration of current and state of the art software development approaches. SDLAB offers access to both expertise and resources necessary for implementing existing designs as functional prototypes or exploring new algorithms and enabling technologies for existing applications and services. SDLAB can support students working on their ongoing studies projects or thesis-related topics, as well as teams engaged in current research projects and industry partners wanting to explore specific software development related challenges.
