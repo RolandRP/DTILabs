@@ -1,0 +1,10 @@
+---
+
+title: labs
+labName: Gamification
+styleRef: Games
+ariaLabel: "Man wearing VR headset"
+iconType: fa fa-gamepad fa-2x
+linkRef: Game
+---
+The objective of the VR&Game Lab is to provide technological and intellectual support that is needed in order to learn existing VR applications and to develop new VR games.
