@@ -1,318 +1,153 @@
-#minNav {
-  display: none;
+---
+---
+
+.mainNav {
+  overflow: hidden;
+  background: white;
+  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+          box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  /*border-bottom: 1px solid lightgrey;*/
 }
 
-#minNavT {
-  display: none;
-}
-
-#fullNav {
-  display: inline;
-  margin: 5px 10px;
-  background: lightblue;
-  width: auto;
-  text-align: center;
-  padding: 0;
-}
-
-#fullNav ul {
-  font-size: 20px;
+.mainNav a, .mainNav label {
+  display: block;
+  padding: 20px;
+  color: rgba(0,0,0,0.7);
   text-decoration: none;
-  list-style: none;
+  line-height: 20px;
+
+}
+
+.mainNav a:hover, .mainNav label:hover {
+  color: Black;
+}
+
+.mainNav label {
+  float: right;
+  padding: 18px 20px;
+  cursor: pointer;
+}
+
+.mainNav label:after {
+  content: "\2261";
+  font-size: 1.8em;
+}
+
+.logo {
+  float: left;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.mainMenu {
+  float: right;
+  max-height: 0;
+  width: 100%;
+  -webkit-transition: max-height 0.3s;
+          transition: max-height 0.3s;
+}
+
+.mainMenu ul {
+  margin: 0 0 0 0;
   padding: 0;
-  background: lightblue;
+   padding-bottom: 10px;
 }
 
-.Tier1 {
-  display: inline-block;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  /background: grey;
-}
-
-.Tier1:hover {
-  background: deepskyblue;
-}
-
-.Tier1  a {
-  padding: 5px;
-}
-
-.Tier1 a:hover {
-  background: deepskyblue;
-}
-
-#fullNav ul li a {
-  text-decoration: none;
-  color: #566c73;
-}
-
-#fullNav ul li a:hover {
-  color: white;
-}
-
-.Drop {
-  position: relative;
-  display: inline;
-}
-
-.EventsDropCont, .LabsDropCont, .ResDropCont {
-  display: none;
-  position: absolute;
-  background-color: teal;
-  min-width: 120px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 0px;
-  margin: 0px;
-  z-index: 1;
-}
-
-.LabsDropCont {
-
-}
-
-.ResDropCont {
-
-}
-
-.Drop li {
-  display: inline-block;
-  text-align: center;
-  margin: auto;
-  padding: 0px;
-}
-
-.Drop li:hover {
-  background: deepskyblue;
-}
-
-.Drop li a {
-  display: inline-block;
-  text-align: center;
-  margin: auto;
-  width: 140px;
-  padding: 5px 2px 5px 0px;
-}
-
-.Drop li a:hover {
-  background: deepskyblue;
-}
-
-#Events:hover .EventsDropCont {
+.mainMenu li {
   display: block;
+  text-align: center;
 }
 
-#Labs:hover .LabsDropCont {
-  display: block;
+.mainMenu a {
+  padding: 10px;
+  width: 100%;
 }
 
-#Res:hover .ResDropCont {
-  display: block;
+.Drop ul {
+  padding-bottom:
 }
 
-@media only screen and (max-width: 750px) {
+.Drop a {
+  font-size: 12px;
+  color: rgba(0,0,0,0.6)
+}
 
-  #fullNav{
-    display: none;
-  }
+#nav { display: none; }
 
-  #minNav {
-    display: block;
-    margin:0 0 50px 0;
+#nav:checked ~ .mainMenu {
+  max-height: 500px; /* This can be anything bigger than your .mainNav height. The transition duration works with this */
+}
+
+@media only screen and (min-width: 700px) {
+
+  .mainNav label { display: none; }
+
+  .mainMenu {
     width: auto;
+    max-height: none;
   }
 
-  #minNavT {
-    display: block;
-    position: relative;
-    top: 25px;
-    left: 20px;
-    width: auto;
-    margin: 0 20px 0 0;
-
-    z-index: 1;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-     -ms-user-select: none;
-         user-select: none;
+  .mainMenu ul {
+    padding: 0 20px;
+    /padding-right: 10px;
   }
 
-  #minNavT input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-
-    cursor: pointer;
-
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
-
-    -webkit-touch-callout: none;
-  }
-
-  #minNavT span
-  {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-
-    background: black;
-    border-radius: 3px;
-
-    z-index: 1;
-
-    -webkit-transform-origin: 4px 0px;
-
-            transform-origin: 4px 0px;
-
-    -webkit-transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease,
-                -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-
-    transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease,
-                -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
-
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease,
-                -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
-
-  #minNavT span:first-child
-  {
-    -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
-  }
-
-  #minNavT span:nth-last-child(2)
-  {
-    -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
-  }
-
-  /*
-   * Transform all the slices of hamburger
-   * into a crossmark.
-   */
-  #minNavT input:checked ~ span
-  {
-    opacity: 1;
-    -webkit-transform: rotate(45deg) translate(-2px, -1px);
-            transform: rotate(45deg) translate(-2px, -1px);
-    background: black;
-  }
-
-  /*
-   * But let's hide the middle one.
-   */
-  #minNavT input:checked ~ span:nth-last-child(3)
-  {
-    opacity: 0;
-    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-            transform: rotate(0deg) scale(0.2, 0.2);
-  }
-
-  /*
-   * Ohyeah and the last one should go the other direction
-   */
-  #minNavT input:checked ~ span:nth-last-child(2)
-  {
-    opacity: 1;
-    -webkit-transform: rotate(-45deg) translate(0, -1px);
-            transform: rotate(-45deg) translate(0, -1px);
-  }
-
-  /*
-   * Make this absolute positioned
-   * at the top left of the screen
-   */
-
-    #minMainUl {
-    position: absolute;
-    width: 100%;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-
-    background: white;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-
-    -webkit-transform-origin: 0% 0%;
-
-            transform-origin: 0% 0%;
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
-
-    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-
-    transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
-
-  .minTier1 {
-    padding: 0px 0;
-    font-size: 16px;
-
-  }
-
-  .minTier1 a {
+  .mainMenu li {
     display: inline-block;
-    text-decoration: none;
-    width: 200px;
-    color:black;
+    text-align: left;
   }
 
-  #minTier2Ul {
-    /display: none;
-    list-style-type: none;
+  .mainNav .mainMenu a {
+    display: inline-block;
+    padding: 20px 10px;
+    width: auto;
   }
 
-  #minTier2Ul a {
-    text-decoration: none;
-    color: black;
+  .mainNav .mainMenu a:hover {
+    padding: 9px 10px 19px 10px;
+    margin: 10px 0 0 0;
+    border-top: 1px solid lightgrey;
   }
 
-  #minTier2Ul li {
-    margin: 0px 0 0 -30px;
-    padding: 0px;
-  }
-  /*
-   * And let's fade it in from the left
-   */
-  #minNavT input:checked ~ ul
-  {
-    -webkit-transform: scale(1.0, 1.0);
-            transform: scale(1.0, 1.0);
-    opacity: 1;
+  .ResDropCont {
+    display:none;
+    position: relative;
   }
 
-  .minEventsDropCont {
-    display: block;
+  .resDrop:hover .ResDropCont {
+    display:block;
+    position:absolute;
+    z-index: 5;
+    background: white;
+    width: inherit;
   }
 
-  .minLabsDropCont {
-    display: block;
+  .Drop {
+    width: auto;
+    padding: 0;
+    margin: 0px 0 0 -100%;
   }
 
-  .minResDropCont {
-    display: block;
+  .EventsDropCont {
+    display:none;
+    position: relative;
   }
+
+  .eventsDrop:hover .EventsDropCont {
+    display:block;
+    position:absolute;
+    z-index: 5;
+    background: white;
+    width: inherit;
+  }
+
+  .eventsDrop .Drop {
+    width: auto;
+    padding: 0;
+    margin: 0px 0 0 -180%;
+  }
+
+}
+
+@media only screen and (min-width: 700px) {
 }

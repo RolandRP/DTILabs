@@ -33,28 +33,18 @@ p {
   margin: 10px;
 }
 
-.div3, .div4 {
-  display: none;
-}
-
-.div5, .div6 {
-  display: none;
-}
-
-.div7, .div8 {
-  display: none;
-}
-
 .content {
   min-height: 80%;
   margin: 50px;
 }
 
 footer {
-  background: lightblue;
+  background: white;
   text-align: center;
   padding: 10px 5px;
   margin: 5% 0;
+  -webkit-box-shadow: 0px -1px 1px rgba(0,0,0,0.2);
+          box-shadow: 0px -1px 1px rgba(0,0,0,0.2)
 }
 
 footer ul {
