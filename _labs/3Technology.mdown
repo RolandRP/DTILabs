@@ -1,0 +1,10 @@
+---
+
+title: labs
+labName: Technology
+styleRef: Techno
+ariaLabel: "Man wearing VR headset"
+iconType: fa fa-cogs fa-2x
+linkRef: Tech
+---
+One of the main purposes of DTI Technology Lab is to support teaching processes in TLU DTI by providing necessary know-how and technical equipment for projects in the field of robotics, Internet of Things and automatization. The lab also provides instructors and working/study space for organizations and individuals who are interested in developing prototype solutions in abovementioned fields. DTI Technology Lab supports teachers and students with their projects and is ready to play supportive roll in research project that might need resources available.

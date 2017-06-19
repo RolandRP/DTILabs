@@ -1,7 +1,6 @@
 ---
 ---
 
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,94 +16,85 @@
   <body>
     {% include nav.html %}
 
+  
+
+
 	<div class="content">
 		<div class="homepageNav">
 			<!--Gamification lab-->
-			<a href="Game">
-				<div class="labsGamification">
-					<div class="labsGamificationLeft" aria-label="Man wearing VR headset">
-						<div class="labsGamificationPic"></div>
-					</div>
-					<div class="labsGamificationRight">
-						<div class="labsGamificationText">
-						<h2><i class="fa fa-gamepad fa-2x" aria-hidden="true"></i> Gamification</h2>
+			{% for 1Game in site.labs %}
+			{% if forloop.index == 1%}
+			<a href="{{1Game.linkRef}}">
+							<div class="labs {{1Game.styleRef}}" >
+								<div class="leftSecond" aria-label="{{1Game.ariaLabel}}">
+									<div class="labsPicSecond"></div>
+								</div>
+								<div class="rightSecondG {{1Game.styleRef}}">
+									<div class="labsTextSecond">
+									<h2><i class="{{1Game.iconType}}" aria-hidden="true"></i>{{1Game.labName}}</h2>
 
-						<p>The objective of the VR&Game Lab is to provide technological and intellectual support that is needed in order to learn existing VR applications and to develop new VR games.
-							</p>
+									<p>{{1Game.content}}</p>
+									</div>
+								</div>
+							</div>
+						</a>
+			{% continue %}
+			{% endif %}
+			{% if forloop.index == 2 %}
+	    		<a href="{{1Game.linkRef}}">
+					<div class="labs {{1Game.styleRef}}">
+						<div class="leftFirstX {{1Game.styleRef}}">
+							<div class="labsTextFirst">
+							<h2><i class="{{1Game.iconType}}" aria-hidden="true"></i>{{1Game.labName}}</h2>
+
+							<p>{{1Game.content}}</p>
+
+							</div>
+						</div>
+						<div class="rightFirst" aria-label="{{1Game.ariaLabel}}">
+							<div class="labsPicFirst"></div>
 						</div>
 					</div>
-				</div>
-			</a>
+				</a>
+			{% continue %}
+    		{% endif %}
+    		{% if forloop.index == 3 %}
+			<a href="{{1Game.linkRef}}">
+					<div class="labs {{1Game.styleRef}}">
+						<div class="leftSecond" aria-label="{{1Game.ariaLabel}}">
+							<div class="labsPicFourth"></div>
+						</div>
+						<div class="rightSecondT {{1Game.styleRef}}">
+							<div class="labsTextSecond">
+							<h2><i class="{{1Game.iconType}}" aria-hidden="true"></i>{{1Game.labName}}</h2>
 
-			<!--IXD lab-->
-			<a href="IXD">
-				<div class="labsIXD">
-					<div class="labsIXDLeft">
-						<div class="labsIXDText">
-						<h2><i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i> IDLAB</h2>
-
-						<p>IDLAB aims to support the conceptualisation and early prototyping stages of the design process. IDLAB offers access to both expertise and resources necessary for conceiving interactive applications and services and later elaborating those ideas as sketches, storyboards, paper prototypes, and wireframes. 
- 
-						IDLAB can support students working on their ongoing studies projects or thesis-related topics, as well as teams engaged in current research projects and industry partners wanting to explore specific design related challenges. 
-						</p>
-
+							<p>{{1Game.content}}</p>
+							</div>
 						</div>
 					</div>
-					<div class="labsIXDRight" aria-label="Woman using an interactive map">
-						<div class="labsIXDPic"></div>
-					</div>
-				</div>
-			</a>
+				</a>
+  			{% continue %}
+    		{% endif %}
+    		{%if forloop.index == 4 %}
+	    		<a href="{{1Game.linkRef}}">
+					<div class="labs {{1Game.styleRef}}">
+						<div class="leftFirstS {{1Game.styleRef}}">
+							<div class="labsTextFirst">
+							<h2><i class="{{1Game.iconType}}" aria-hidden="true"></i>{{1Game.labName}}</h2>
 
-			<!--Technology lab-->
-			<a href="Tech">
-				<div class="labsTechnology">
-					<div class="labsTechnologyLeft" aria-label="A switchboard">
-						<div class="labsTechnologyPic"></div>
-					</div>
-					<div class="labsTechnologyRight">
-						<div class="labsTechnologyText">
-							<h2><i class="fa fa-cogs fa-2x" aria-hidden="true"></i> Technology</h2>
+							<p>{{1Game.content}}</p>
 
-							<p>One of the main purposes of DTI Technology Lab is to support teaching processes in TLU DTI by
-
-							providing necessary know-how and technical equipment for projects in the field of robotics, Internet
-
-							of Things and automatization. The lab also provides instructors and working/study space for
-
-							organizations and individuals who are interested in developing prototype solutions in
-
-							abovementioned fields.
-
-							DTI Technology Lab supports teachers and students with their projects and is ready to play
-
-							supportive roll in research project that might need resources available.</p>
-
+							</div>
+						</div>
+						<div class="rightFirst" aria-label="{{1Game.ariaLabel}}">
+							<div class="labsPicThird"></div>
 						</div>
 					</div>
-				</div>
-			</a>
-
-			<!--Software Development lab-->
-			<a href="Soft">
-				<div class="labsSoftware">
-					<div class="labsSoftwareLeft">
-						<div class="labsSoftwareText">
-						<h2><i class="fa fa-code fa-2x" aria-hidden="true"></i> Software</h2>
-              
-						<p>SDLAB aims to support the exploration of current and state of the art software development approaches. SDLAB offers access to both expertise and resources necessary for implementing existing designs as functional prototypes or exploring new algorithms and enabling technologies for existing applications and services. 
- 
-						SDLAB can support students working on their ongoing studies projects or thesis-related topics, as well as teams engaged in current research projects and industry partners wanting to explore specific software development related challenges.</p>
-
-						</div>
-					</div>
-					<div class="labsSoftwareRight">
-						<div class="labsSoftwarePic" aria-label="World covered in data"></div>
-					</div>
-				</div>
-			</a>
-		</div>
-    </div>
+				</a>
+			{% continue %}
+    		{% endif %}
+			{% endfor %}
+			
 
     {% include footer.html %}
 
