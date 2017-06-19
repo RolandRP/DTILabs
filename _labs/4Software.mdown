@@ -2,15 +2,8 @@
 
 title: labs
 labName: Software
-
-
-
-parentDiv: labsSoftware
-leftDiv: labsSoftwareLeft
-rightDiv: labsSoftwareRight
-textDiv: labsSoftwareText
-picDiv: labsSoftwarePic
-ariaLabel: "World covered in date"
+styleRef: Soft
+ariaLabel: "Man wearing VR headset"
 iconType: fa fa-code fa-2x
 linkRef: Soft
 ---

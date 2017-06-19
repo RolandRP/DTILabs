@@ -2,14 +2,7 @@
 
 title: labs
 labName: Gamification
-
-
-
-parentDiv: labsGamification
-leftDiv: labsGamificationLeft
-rightDiv: labsGamificationRight
-textDiv: labsGamificationText
-picDiv: labsGamificationPic
+styleRef: Games
 ariaLabel: "Man wearing VR headset"
 iconType: fa fa-gamepad fa-2x
 linkRef: Game

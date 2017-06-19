@@ -2,15 +2,8 @@
 
 title: labs
 labName: Technology
-
-
-
-parentDiv: labsTechnology
-leftDiv: labsTechnologyLeft
-rightDiv: labsTechnologyRight
-textDiv: labsTechnologyText
-picDiv: labsTechnologyPic
-ariaLabel: "A switchboard"
+styleRef: Techno
+ariaLabel: "Man wearing VR headset"
 iconType: fa fa-cogs fa-2x
 linkRef: Tech
 ---
