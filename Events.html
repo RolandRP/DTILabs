@@ -4,56 +4,47 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    {% include base.html %}
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="{{base}}/assets/css/main.css">
-    <link rel="stylesheet" href="{{base}}/assets/css/nav.css">
-    <link rel="stylesheet" href="{{base}}/assets/css/events.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Events</title>
-  </head>
-  <body>
-    {% include nav.html %}
+	<head>
+		{% include base.html %}
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="{{base}}/assets/css/main.css">
+		<link rel="stylesheet" href="{{base}}/assets/css/nav.css">
+		<link rel="stylesheet" href="{{base}}/assets/css/events.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Events</title>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/et_EE/sdk.js#xfbml=1&version=v2.9";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		{% include nav.html %}
 
-    <div class="content">
-		<h2>Events</h2>
-		<div class="eventsContent">
-		{% for event in site.eventNames %}
-			{% if forloop.last == true %}
-			{% else %}
-				<div class="eventCard">
-					<div class="mobLayout">
-						<div class="eventTime">
-							<h3>{{site.eventDates[forloop.index]}}</h3>
-							<h4 class="mobTimeNumbers">{{site.eventTimes[forloop.index]}}</h4>
-						</div>
-						<div class="eventRoom">
-							<h3>Room</h3>
-							<p>{{site.eventRooms[forloop.index]}}</p>
-						</div>
-						<div class="eventLabs">
-							<h3>Lab</h3>
-							<p>{{site.eventLabs[forloop.index]}}</p>
-						</div>
-					</div>
-					<div class="eventInfo">
-						<h3 class="eventName">{{site.eventNames[forloop.index]}}</h3>
-						<p class="eventDesc" id="popupOpen">{{site.eventDesc[forloop.index]}}</p>
-					</div>
-					<a href="#popupOpen">
-						<div class="popupArrowContainer">
-							<img class="popupOpenArrow" src="{{base}}/assets/img/arrow-down.svg" alt="Arrow down"/>
-							<img class="popupCloseArrow" src="{{base}}/assets/img/arrow-up.svg" alt="Arrow down"/>
-						</div>
-					</a>
+		<div class="content">
+			<h2>Events</h2>
+			<div class="eventsContent">
+				<div class="fb-page" 
+					data-href="https://www.facebook.com/dtilabs" 
+					data-tabs="events" 
+					data-width="600px" 
+					data-height="auto" 
+					data-small-header="true" 
+					data-adapt-container-width="true" 
+					data-hide-cover="false" 
+					data-show-facepile="false" >
+					<blockquote cite="https://www.facebook.com/dtilabs" class="fb-xfbml-parse-ignore">
+						<a href="https://www.facebook.com/dtilabs">TLU DTI Labs</a>
+					</blockquote>
 				</div>
-			{% endif%}
-		{% endfor %}
+			</div>
 		</div>
-    </div>
 
-    {% include footer.html %}
+		{% include footer.html %}
 
-  </body>
+	</body>
 </html>
