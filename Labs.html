@@ -1,7 +1,6 @@
 ---
 ---
 
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,26 +16,47 @@
   <body>
     {% include nav.html %}
 
+  
+
+
 	<div class="content">
 		<div class="homepageNav">
 			<!--Gamification lab-->
-			<a href="Game">
-				<div class="labsGamification">
-					<div class="labsGamificationLeft" aria-label="Man wearing VR headset">
-						<div class="labsGamificationPic"></div>
-					</div>
-					<div class="labsGamificationRight">
-						<div class="labsGamificationText">
-						<h2><i class="fa fa-gamepad fa-2x" aria-hidden="true"></i> Gamification</h2>
+			{% for 1Game in site.labs %}
+			{% if forloop.index == 2 or forloop.index == 4 %}
+	    		<a href="{{1Game.linkRef}}">
+					<div class="{{1Game.parentDiv}}">
+						<div class="{{1Game.leftDiv}}">
+							<div class="{{1Game.textDiv}}">
+							<h2><i class="{{1Game.iconType}}" aria-hidden="true"></i> {{1Game.labName}}</h2>
 
-						<p>The objective of the VR&Game Lab is to provide technological and intellectual support that is needed in order to learn existing VR applications and to develop new VR games.
-							</p>
+							<p>{{1Game.content}}</p>
+
+							</div>
+						</div>
+						<div class="{{1Game.rightDiv}}" aria-label="{{1Game.ariaLabel}}">
+							<div class="{{1Game.picDiv}}"></div>
+						</div>
+					</div>
+				</a>
+			{% continue %}
+    		{% endif %}
+			<a href="{{1Game.linkRef}}">
+				<div class="{{1Game.parentDiv}}">
+					<div class="{{1Game.leftDiv}}" aria-label="{{1Game.ariaLabel}}">
+						<div class="{{1Game.picDiv}}"></div>
+					</div>
+					<div class="{{1Game.rightDiv}}">
+						<div class="{{1Game.textDiv}}">
+						<h2><i class="{{1Game.iconType}}" aria-hidden="true"></i>{{1Game.labName}}</h2>
+
+						<p>{{1Game.content}}</p>
 						</div>
 					</div>
 				</div>
 			</a>
-
-			<!--IXD lab-->
+{% endfor %}
+			<!--IXD lab--
 			<a href="IXD">
 				<div class="labsIXD">
 					<div class="labsIXDLeft">
@@ -56,7 +76,7 @@
 				</div>
 			</a>
 
-			<!--Technology lab-->
+			<!--Technology lab--
 			<a href="Tech">
 				<div class="labsTechnology">
 					<div class="labsTechnologyLeft" aria-label="A switchboard">
@@ -85,7 +105,7 @@
 				</div>
 			</a>
 
-			<!--Software Development lab-->
+			<!--Software Development lab--
 			<a href="Soft">
 				<div class="labsSoftware">
 					<div class="labsSoftwareLeft">
@@ -105,6 +125,9 @@
 			</a>
 		</div>
     </div>
+
+  -->
+
 
     {% include footer.html %}
 

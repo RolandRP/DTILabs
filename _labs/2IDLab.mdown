@@ -1,0 +1,17 @@
+---
+
+title: labs
+labName: IDLab
+
+
+
+parentDiv: labsIXD
+leftDiv: labsIXDLeft
+rightDiv: labsIXDRight
+textDiv: labsIXDText
+picDiv: labsIXDPic
+ariaLabel: "Woman using interactive map"
+iconType: fa fa-lightbulb-o fa-2x
+linkRef: IXD
+---
+IDLAB aims to support the conceptualisation and early prototyping stages of the design process. IDLAB offers access to both expertise and resources necessary for conceiving interactive applications and services and later elaborating those ideas as sketches, storyboards, paper prototypes, and wireframes. IDLAB can support students working on their ongoing studies projects or thesis-related topics, as well as teams engaged in current research projects and industry partners wanting to explore specific design related challenges. 
