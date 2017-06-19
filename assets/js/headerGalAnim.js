@@ -1,3 +1,7 @@
+var counter = 1;
+var xDown = null;                                                        
+var yDown = null;
+
 var div1 = document.getElementById("div1");
 var div2 = document.getElementById("div2");
 var div3 = document.getElementById("div3");
@@ -15,6 +19,8 @@ var dontGo = false;
 var noListener = false;
 
 window.onload = function(){
+	document.getElementById("headerGallery").addEventListener('touchstart', handleTouchStart, false);        
+	document.getElementById("headerGallery").addEventListener('touchmove', handleTouchMove, false);
 	caro1come();
 	document.getElementById("headerGallery").addEventListener("mouseover", changeDontGo);
 	document.getElementById("headerGallery").addEventListener("mouseout", function(){dontGo = false;});
@@ -56,6 +62,69 @@ function changeDontGo(){
 	dontGo = true;
 }
 
+function handleTouchStart(evt) {                                         
+	xDown = evt.touches[0].clientX;                                      
+	yDown = evt.touches[0].clientY;                                      
+};
+                                             
+function handleTouchMove(evt){
+	if (! xDown || ! yDown){
+		return;
+	}
+
+	var xUp = evt.touches[0].clientX;                                    
+	var yUp = evt.touches[0].clientY;
+
+	var xDiff = xDown - xUp;
+	var yDiff = yDown - yUp;
+	if(Math.abs(xDiff)+Math.abs(yDiff)>150){
+		if(Math.abs(xDiff) > Math.abs(yDiff)){
+			//left swipe
+			if(xDiff>0){
+				//parempoolne pilt tuleb
+				loadNext = false;
+				document.getElementById("headerGallery").removeEventListener("mouseover", changeDontGo);
+				noListener = true;
+				dontGo = false;
+				i=counter+1;
+				if(i==5){
+					i=1;
+				}
+				window['caro'+counter+'go']();
+				 
+			//right swipe
+			}else{
+				//vasakpoolne pilt tuleb
+				loadNext = false;
+				document.getElementById("headerGallery").removeEventListener("mouseover", changeDontGo);
+				noListener = true;
+				dontGo = false;
+				i=counter-1;
+				if(i==0){
+					i=4;
+				}
+				window['caro'+counter+'go']();
+			}                       
+		}
+		//üles-alla swipe
+		/*
+		else{
+			//up swipe
+			if(yDiff>0){
+				//stuff liigub alla
+			}
+			//down swipe
+			else{
+				//stuff liigub üles
+			}                                                                 
+		}
+		*/
+		//reset values
+		xDown = null;
+		yDown = null;
+	}
+};
+
 function caro1come(){
 	counter = 1;
 	for(var i=0;i<navDots.length;i++){
@@ -72,6 +141,7 @@ function caro1come(){
 		div1.addEventListener("webkitAnimationEnd", caro1go);
 		firstTime = false;
 	}else{
+		document.getElementById("headerGallery").style.animation = "contentFadeIn 0.3s ease-in-out";
 		div1.style.animation = "comeLeft 9.6s ease-in-out";
 		div2.style.animation = "comeRight 9.6s ease-in-out";
 		div1.addEventListener("webkitAnimationEnd", caro1go);
@@ -86,8 +156,9 @@ function caro1go(){
 	if(dontGo){setTimeout(caro1go, 1000)}
 	else{
 		div1.removeEventListener("webkitAnimationEnd", caro1go);
-		div1.style.animation = "goLeft 0.3s ease-in-out";
-		div2.style.animation = "goRight 0.3s ease-in-out";
+		document.getElementById("headerGallery").style.animation = "contentFadeOut 0.3s ease-in-out";
+		div1.style.animation = "goLeft 0.2s ease-in-out";
+		div2.style.animation = "goRight 0.2s ease-in-out";
 		div1.addEventListener("webkitAnimationEnd", caro1end);
 	}
 }
@@ -113,6 +184,7 @@ function caro2come(){
 	dontGo = false;
 	div3.style.display = "inline-block";
 	div4.style.display = "inline-block";
+	document.getElementById("headerGallery").style.animation = "contentFadeIn 0.3s ease-in-out";
 	div3.style.animation = "comeLeft 9.6s ease-in-out";
 	div4.style.animation = "comeRight 9.6s ease-in-out";
 	div3.addEventListener("webkitAnimationEnd", caro2go);
@@ -126,8 +198,9 @@ function caro2go(){
 	if(dontGo){setTimeout(caro2go, 1000)}
 	else{
 		div3.removeEventListener("webkitAnimationEnd", caro2go);
-		div3.style.animation = "goLeft 0.3s ease-in-out";
-		div4.style.animation = "goRight 0.3s ease-in-out";
+		document.getElementById("headerGallery").style.animation = "contentFadeOut 0.3s ease-in-out";
+		div3.style.animation = "goLeft 0.2s ease-in-out";
+		div4.style.animation = "goRight 0.2s ease-in-out";
 		div3.addEventListener("webkitAnimationEnd", caro2end);
 	}
 }
@@ -153,6 +226,7 @@ function caro3come(){
 	dontGo = false;
 	div5.style.display = "inline-block";
 	div6.style.display = "inline-block";
+	document.getElementById("headerGallery").style.animation = "contentFadeIn 0.3s ease-in-out";
 	div5.style.animation = "comeLeft 9.6s ease-in-out";
 	div6.style.animation = "comeRight 9.6s ease-in-out";
 	div5.addEventListener("webkitAnimationEnd", caro3go);
@@ -166,8 +240,9 @@ function caro3go(){
 	if(dontGo){setTimeout(caro3go, 1000)}
 	else{
 		div5.removeEventListener("webkitAnimationEnd", caro3go);
-		div5.style.animation = "goLeft 0.3s ease-in-out";
-		div6.style.animation = "goRight 0.3s ease-in-out";
+		document.getElementById("headerGallery").style.animation = "contentFadeOut 0.3s ease-in-out";
+		div5.style.animation = "goLeft 0.2s ease-in-out";
+		div6.style.animation = "goRight 0.2s ease-in-out";
 		div5.addEventListener("webkitAnimationEnd", caro3end);
 	}
 }
@@ -193,6 +268,7 @@ function caro4come(){
 	dontGo = false;
 	div7.style.display = "inline-block";
 	div8.style.display = "inline-block";
+	document.getElementById("headerGallery").style.animation = "contentFadeIn 0.3s ease-in-out";
 	div7.style.animation = "comeLeft 9.6s ease-in-out";
 	div8.style.animation = "comeRight 9.6s ease-in-out";
 	div7.addEventListener("webkitAnimationEnd", caro4go);
@@ -206,8 +282,9 @@ function caro4go(){
 	if(dontGo){setTimeout(caro4go, 1000)}
 	else{
 		div7.removeEventListener("webkitAnimationEnd", caro4go);
-		div7.style.animation = "goLeft 0.3s ease-in-out";
-		div8.style.animation = "goRight 0.3s ease-in-out";
+		document.getElementById("headerGallery").style.animation = "contentFadeOut 0.3s ease-in-out";
+		div7.style.animation = "goLeft 0.2s ease-in-out";
+		div8.style.animation = "goRight 0.2s ease-in-out";
 		div7.addEventListener("webkitAnimationEnd", caro4end);
 	}
 }
