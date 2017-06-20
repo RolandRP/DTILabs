@@ -8,26 +8,6 @@
 @import url("{{base}}/assets/css/main.css");
 @import url("{{base}}/assets/css/nav.css");
 
-.content{
-}
-
-.mainpText{
-}
-
-.eventsContent{
-	margin-left:20px;
-	float:right;
-}
-
-.fbContainer{
-	text-align:center;
-	box-shadow: 0 5px 10px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
-}
-
-.fb_reset{
-	display:none;
-}
-
 .div3, .div4, .div5, .div6, .div7, .div8{
 	display:none;
 }
@@ -356,34 +336,9 @@
 
   .header-container {
     overflow: hidden;
-    margin: 1% 0;
+    margin: 1% 0;;
     display: relative;
   }
-  
-  .content{
-	  margin:10px;
-  }
-  
-	.eventsContent{
-		display:block;
-		float:none;
-		text-align:center;
-		padding:0;
-		margin:0;
-		width:0;
-	}
-	
-	.fbContainer{
-		text-align:center;
-		margin:0;
-		padding:0;
-		width:inherit;
-	}
-	
-	.fb-page{
-		width:inherit;
-	}
-
 
   .div1, .div3, .div5, .div7 {
     min-width: calc(100% + 80px);
@@ -613,14 +568,14 @@
 	}
 
 	@-webkit-keyframes firstRight{
-		0%{-webkit-transform:translateX(0%) skew(-20deg);transform:translateX(0%) skew(-20deg)}
-		100%{-webkit-transform:translateX(0%) skew(-20deg);transform:translateX(0%) skew(-20deg)}
+		0%{-webkit-transform:translateX(-85%) skew(-20deg);transform:translateX(-85%) skew(-20deg)}
+		100%{-webkit-transform:translateX(-85%) skew(-20deg);transform:translateX(-85%) skew(-20deg)}
 
 	}
 
 	@keyframes firstRight{
-		0%{-webkit-transform:translateX(0%) skew(-20deg);transform:translateX(0%) skew(-20deg)}
-		100%{-webkit-transform:translateX(0%) skew(-20deg);transform:translateX(0%) skew(-20deg)}
+		0%{-webkit-transform:translateX(-85%) skew(-20deg);transform:translateX(-85%) skew(-20deg)}
+		100%{-webkit-transform:translateX(-85%) skew(-20deg);transform:translateX(-85%) skew(-20deg)}
 
 	}
 
@@ -648,23 +603,23 @@
 
 	@-webkit-keyframes comeRight{
 		0%{-webkit-transform:translateX(85%) skew(0deg);transform:translateX(85%) skew(0deg)}
-		5%{-webkit-transform:translateX(0) skew(-20deg);transform:translateX(0) skew(-20deg)}
-		100%{-webkit-transform:translateX(0) skew(-20deg);transform:translateX(0) skew(-20deg)}
+		5%{-webkit-transform:translateX(-85%) skew(-20deg);transform:translateX(-85%) skew(-20deg)}
+		100%{-webkit-transform:translateX(-85%) skew(-20deg);transform:translateX(-85%) skew(-20deg)}
 	}
 
 	@keyframes comeRight{
 		0%{-webkit-transform:translateX(85%) skew(0deg);transform:translateX(85%) skew(0deg)}
-		5%{-webkit-transform:translateX(0) skew(-20deg);transform:translateX(0) skew(-20deg)}
-		100%{-webkit-transform:translateX(0) skew(-20deg);transform:translateX(0) skew(-20deg)}
+		5%{-webkit-transform:translateX(-85%) skew(-20deg);transform:translateX(-85%) skew(-20deg)}
+		100%{-webkit-transform:translateX(-85%) skew(-20deg);transform:translateX(-85%) skew(-20deg)}
 	}
 
 	@-webkit-keyframes goRight{
-		0%{-webkit-transform:translateX(0) skew(-20deg);transform:translateX(0) skew(-20deg)}
+		0%{-webkit-transform:translateX(-85%) skew(-20deg);transform:translateX(-85%) skew(-20deg)}
 		100%{-webkit-transform:translateX(85%) skew(0deg);transform:translateX(85%) skew(0deg)}
 	}
 
 	@keyframes goRight{
-		0%{-webkit-transform:translateX(0) skew(-20deg);transform:translateX(0) skew(-20deg)}
+		0%{-webkit-transform:translateX(-85%) skew(-20deg);transform:translateX(-85%) skew(-20deg)}
 		100%{-webkit-transform:translateX(85%) skew(0deg);transform:translateX(85%) skew(0deg)}
 	}
 }
