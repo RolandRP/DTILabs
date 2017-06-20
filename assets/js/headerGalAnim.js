@@ -136,15 +136,25 @@ function caro1come(){
 	div1.style.display = "inline-block";
 	div2.style.display = "inline-block";
 	if(firstTime){
+		div1.style.webkitAnimation = "firstLeft 9.6s ease-in-out";
+		div2.style.webkitAnimation = "firstRight 9.6s ease-in-out";
 		div1.style.animation = "firstLeft 9.6s ease-in-out";
 		div2.style.animation = "firstRight 9.6s ease-in-out";
+		
 		div1.addEventListener("webkitAnimationEnd", caro1go);
+		div1.addEventListener("animationEnd", caro1go);
+		
 		firstTime = false;
 	}else{
+		document.getElementById("headerGallery").style.webkitAnimation = "contentFadeIn 0.3s ease-in-out";
+		div1.style.webkitAnimation = "comeLeft 9.6s ease-in-out";
+		div2.style.webkitAnimation = "comeRight 9.6s ease-in-out";
 		document.getElementById("headerGallery").style.animation = "contentFadeIn 0.3s ease-in-out";
 		div1.style.animation = "comeLeft 9.6s ease-in-out";
 		div2.style.animation = "comeRight 9.6s ease-in-out";
+		
 		div1.addEventListener("webkitAnimationEnd", caro1go);
+		div1.addEventListener("animationend", caro1go);
 	}
 	if(noListener){
 		document.getElementById("headerGallery").addEventListener("mouseover", changeDontGo);
@@ -156,10 +166,16 @@ function caro1go(){
 	if(dontGo){setTimeout(caro1go, 1000)}
 	else{
 		div1.removeEventListener("webkitAnimationEnd", caro1go);
+		div1.removeEventListener("animationend", caro1go);
+		document.getElementById("headerGallery").style.webkitAnimation = "contentFadeOut 0.3s ease-in-out";
+		div1.style.webkitAnimation = "goLeft 0.2s ease-in-out";
+		div2.style.webkitAnimation = "goRight 0.2s ease-in-out";
 		document.getElementById("headerGallery").style.animation = "contentFadeOut 0.3s ease-in-out";
 		div1.style.animation = "goLeft 0.2s ease-in-out";
 		div2.style.animation = "goRight 0.2s ease-in-out";
+		
 		div1.addEventListener("webkitAnimationEnd", caro1end);
+		div1.addEventListener("animationend", caro1end);
 	}
 }
 
@@ -167,6 +183,7 @@ function caro1end(){
 	div1.style.display = "none";
 	div2.style.display = "none";
 	div1.removeEventListener("webkitAnimationEnd", caro1end);
+	div1.removeEventListener("animationend", caro1end);
 	if(loadNext){
 		caro2come();
 	}else{
@@ -184,10 +201,15 @@ function caro2come(){
 	dontGo = false;
 	div3.style.display = "inline-block";
 	div4.style.display = "inline-block";
+	document.getElementById("headerGallery").style.webkitAnimation = "contentFadeIn 0.3s ease-in-out";
+	div3.style.webkitAnimation = "comeLeft 9.6s ease-in-out";
+	div4.style.webkitAnimation = "comeRight 9.6s ease-in-out";
 	document.getElementById("headerGallery").style.animation = "contentFadeIn 0.3s ease-in-out";
 	div3.style.animation = "comeLeft 9.6s ease-in-out";
 	div4.style.animation = "comeRight 9.6s ease-in-out";
+	
 	div3.addEventListener("webkitAnimationEnd", caro2go);
+	div3.addEventListener("animationend", caro2go);
 	if(noListener){
 		document.getElementById("headerGallery").addEventListener("mouseover", changeDontGo);
 		noListener = false;
@@ -198,10 +220,16 @@ function caro2go(){
 	if(dontGo){setTimeout(caro2go, 1000)}
 	else{
 		div3.removeEventListener("webkitAnimationEnd", caro2go);
+		div3.removeEventListener("animationend", caro2go);
+		document.getElementById("headerGallery").style.webkitAnimation = "contentFadeOut 0.3s ease-in-out";
+		div3.style.webkitAnimation = "goLeft 0.2s ease-in-out";
+		div4.style.webkitAnimation = "goRight 0.2s ease-in-out";
 		document.getElementById("headerGallery").style.animation = "contentFadeOut 0.3s ease-in-out";
 		div3.style.animation = "goLeft 0.2s ease-in-out";
 		div4.style.animation = "goRight 0.2s ease-in-out";
+		
 		div3.addEventListener("webkitAnimationEnd", caro2end);
+		div3.addEventListener("animationend", caro2end);
 	}
 }
 
@@ -209,6 +237,7 @@ function caro2end(){
 	div3.style.display = "none";
 	div4.style.display = "none";
 	div3.removeEventListener("webkitAnimationEnd", caro2end);
+	div3.removeEventListener("animationend", caro2end);
 	if(loadNext){
 		caro3come();
 	}else{
@@ -226,10 +255,15 @@ function caro3come(){
 	dontGo = false;
 	div5.style.display = "inline-block";
 	div6.style.display = "inline-block";
+	document.getElementById("headerGallery").style.webkitAnimation = "contentFadeIn 0.3s ease-in-out";
+	div5.style.webkitAnimation = "comeLeft 9.6s ease-in-out";
+	div6.style.webkitAnimation = "comeRight 9.6s ease-in-out";
 	document.getElementById("headerGallery").style.animation = "contentFadeIn 0.3s ease-in-out";
 	div5.style.animation = "comeLeft 9.6s ease-in-out";
 	div6.style.animation = "comeRight 9.6s ease-in-out";
+	
 	div5.addEventListener("webkitAnimationEnd", caro3go);
+	div5.addEventListener("animationend", caro3go);
 	if(noListener){
 		document.getElementById("headerGallery").addEventListener("mouseover", changeDontGo);
 		noListener = false;
@@ -240,10 +274,17 @@ function caro3go(){
 	if(dontGo){setTimeout(caro3go, 1000)}
 	else{
 		div5.removeEventListener("webkitAnimationEnd", caro3go);
+		div5.removeEventListener("animationend", caro3go);
+		
+		document.getElementById("headerGallery").style.webkitAnimation = "contentFadeOut 0.3s ease-in-out";
+		div5.style.webkitAnimation = "goLeft 0.2s ease-in-out";
+		div6.style.webkitAnimation = "goRight 0.2s ease-in-out";
 		document.getElementById("headerGallery").style.animation = "contentFadeOut 0.3s ease-in-out";
 		div5.style.animation = "goLeft 0.2s ease-in-out";
 		div6.style.animation = "goRight 0.2s ease-in-out";
+		
 		div5.addEventListener("webkitAnimationEnd", caro3end);
+		div5.addEventListener("animationend", caro3end);
 	}
 }
 
@@ -251,6 +292,7 @@ function caro3end(){
 	div5.style.display = "none";
 	div6.style.display = "none";
 	div5.removeEventListener("webkitAnimationEnd", caro3end);
+	div5.removeEventListener("animationend", caro3end);
 	if(loadNext){
 		caro4come();
 	}else{
@@ -268,10 +310,16 @@ function caro4come(){
 	dontGo = false;
 	div7.style.display = "inline-block";
 	div8.style.display = "inline-block";
+	
+	document.getElementById("headerGallery").style.webkitAnimation = "contentFadeIn 0.3s ease-in-out";
+	div7.style.webkitAnimation = "comeLeft 9.6s ease-in-out";
+	div8.style.webkitAnimation = "comeRight 9.6s ease-in-out";
 	document.getElementById("headerGallery").style.animation = "contentFadeIn 0.3s ease-in-out";
 	div7.style.animation = "comeLeft 9.6s ease-in-out";
 	div8.style.animation = "comeRight 9.6s ease-in-out";
+	
 	div7.addEventListener("webkitAnimationEnd", caro4go);
+	div7.addEventListener("animationend", caro4go);
 	if(noListener){
 		document.getElementById("headerGallery").addEventListener("mouseover", changeDontGo);
 		noListener = false;
@@ -282,10 +330,17 @@ function caro4go(){
 	if(dontGo){setTimeout(caro4go, 1000)}
 	else{
 		div7.removeEventListener("webkitAnimationEnd", caro4go);
+		div7.removeEventListener("animationend", caro4go);
+		
+		document.getElementById("headerGallery").style.webkitAnimation = "contentFadeOut 0.3s ease-in-out";
+		div7.style.webkitAnimation = "goLeft 0.2s ease-in-out";
+		div8.style.webkitAnimation = "goRight 0.2s ease-in-out";
 		document.getElementById("headerGallery").style.animation = "contentFadeOut 0.3s ease-in-out";
 		div7.style.animation = "goLeft 0.2s ease-in-out";
 		div8.style.animation = "goRight 0.2s ease-in-out";
+		
 		div7.addEventListener("webkitAnimationEnd", caro4end);
+		div7.addEventListener("animationend", caro4end);
 	}
 }
 
@@ -293,6 +348,7 @@ function caro4end(){
 	div7.style.display = "none";
 	div8.style.display = "none";
 	div7.removeEventListener("webkitAnimationEnd", caro4end);
+	div7.removeEventListener("animationend", caro4end);
 	if(loadNext){
 		caro1come();
 	}else{
