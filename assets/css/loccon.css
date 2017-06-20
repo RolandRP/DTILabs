@@ -1,5 +1,5 @@
 table, th, td {
-	text-align: left;
+	text-align: center;
 	border-collapse: collapse;
 }
 th, td {
@@ -7,16 +7,14 @@ th, td {
     text-align: center-left;
 }
 th {
-    background-color: #80aaff;
-    color: white;
+    color: #777;
 }
 table#t01 {
     width: 100%;
-    background-color: #ccdcff;
 	/*box-shadow: 0 0 10px #000;*/
 }
 th, td{
-    border-bottom: 2px solid #4d88ff;
+    border-bottom: 1px solid lightgrey;
 }
 
 .Maps{
