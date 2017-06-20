@@ -11,7 +11,6 @@ th {
 }
 table#t01 {
     width: 100%;
-	/*box-shadow: 0 0 10px #000;*/
 }
 th, td{
     border-bottom: 1px solid lightgrey;
@@ -64,17 +63,87 @@ th, td{
 	    align-content: center;
 }
 
+
+
+#map1{
+	width: 400px;
+	height: 400px;
+	-webkit-transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+	transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+}
+
+#map2{
+	width: 400px;
+	height: 400px;
+	-webkit-transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+	transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+}
 .img{
 	margin: 20px;
 	border: 20px;
 	border-style: solid;
 	border-color: #80aaff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	-webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
-img:hover{
+
+#map1:hover{
+	width:500px;
+	height: 500px;
 	-webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-	        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#map2:hover{
+	width:500px;
+	height: 500px;
+	-webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+@media only screen and (max-width: 750px) {
+
+	html {
+   		min-width: 320px;
+	}
+	body{
+		min-width: 320px
+	}
+
+	.content{
+		width: 100%;
+		margin:none;
+	}
+
+	table#t01 {
+    	width: 320px;
+	}
+	table, th, td {
+	text-align: center;
+	border-collapse: collapse;
+	width: inherit;
+	height: auto;
+	}
+
+	.Maps{
+		display: block;
+	}
+
+	#map1{
+		width:300px;
+		height: 300px;
+		margin-left: 10%;
+	}
+
+	#map2{
+		width: 300px;
+		height: 300px;
+		margin-left: 10%;
+	}
+
+
+
 }

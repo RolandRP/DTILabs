@@ -33,18 +33,31 @@ a{
 .fa-gamepad {
  	color: rgba(143, 0, 179, 1);
  	margin-right: 15px;
+	-webkit-transition: text-shadow 0.2s;
+	-moz-transition: text-shadow 0.2s;
+	transition:text-shadow 0.2s;
 }
+
 .fa-cogs {
 	color: rgba(0, 153, 255, 1);
 	margin-right: 15px;
+	-webkit-transition: text-shadow 0.2s;
+	-moz-transition: text-shadow 0.2s;
+	transition:text-shadow 0.2s;
 }
 .fa-code{
 	color: rgba(255, 153, 0, 1);
 	margin-right: 15px;
+	-webkit-transition: text-shadow 0.2s;
+	-moz-transition: text-shadow 0.2s;
+	transition:text-shadow 0.2s;
 }
 .fa-lightbulb-o{
 	color: rgba(8, 153, 0, 1);
 	margin-right: 15px;
+	-webkit-transition: text-shadow 0.2s;
+	-moz-transition: text-shadow 0.2s;
+	transition:text-shadow 0.2s;
 }
 
 
@@ -338,6 +351,20 @@ a{
 
 
 /*Hovers*/
+
+.labs:hover .fa-lightbulb-o{
+	text-shadow: 4px 4px 2px #bbb;
+}
+.labs:hover .fa-gamepad{
+	text-shadow: 4px 4px 2px #bbb;
+}
+.labs:hover .fa-code{
+	text-shadow: 4px 4px 2px #bbb;
+}
+.labs:hover .fa-cogs{
+	text-shadow: 4px 4px 2px #bbb;
+}
+
 
 
 .labs:hover{
