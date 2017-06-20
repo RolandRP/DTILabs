@@ -1,0 +1,7 @@
+---
+name: Jaagup Kippar
+lab: Tech
+number: 56672630
+room: A-307
+email: jaagup.kippar@tlu.ee
+---
