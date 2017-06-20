@@ -1,0 +1,7 @@
+---
+name: Priit Tammets
+lab: None
+number: 56672630
+room: A-307
+email: priit.tammets@tlu.ee
+---

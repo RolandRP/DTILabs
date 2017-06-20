@@ -35,3 +35,4 @@ root: /octo-5
 collections:
     mentors:
     labs:
+    contacts:
