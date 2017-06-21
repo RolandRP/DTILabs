@@ -120,6 +120,16 @@ p {
   display: none;
 }
 
+.content a {
+  color: grey;
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: black;
+  text-decoration: none;
+}
+
 {% for mentor in site.mentors %}
 
 #mentor{{ forloop.index }}:target {
