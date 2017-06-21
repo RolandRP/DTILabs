@@ -1,0 +1,55 @@
+---
+---
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include base.html %}
+    <link rel="stylesheet" href="{{base}}/assets/css/main.css">
+    <link rel="stylesheet" href="{{base}}/assets/css/mentors.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    {% include nav.html %}
+
+    <div class='content'>
+
+      <h3>Mentors</h3>
+
+      <div class="mentors">
+
+        {% for mentor in site.mentors %}
+
+        <a href="#mentor{{ forloop.index }}">
+          <div class="person {{ mentor.lab }}">
+            <div class="user">
+            </div>
+            <span class="name">{{ mentor.name }}</span>
+            <span class="occ">{{ mentor.occupation }}</span>
+            <span class="lab">{{ mentor.lab }}</span>
+          </div>
+        </a>
+
+        <div id="mentor{{ forloop.index }}" class="popup mentor{{ forloop.index }}">
+        	<a class="" href="#"></a>
+        	<div class="">
+            <div class="user">
+            </div>
+            <span class="name">{{ mentor.name }}</span>
+            <span class="occ">{{ mentor.occupation }}</span>
+            <span class="lab">{{ mentor.lab }}</span>
+            <p>{{ mentor.content }}</p>
+        	</div>
+        </div>
+
+        {% endfor %}
+
+      </div>
+
+    {% include footer.html %}
+
+    </div>
+
+  </body>
+</html>

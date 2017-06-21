@@ -20,7 +20,7 @@
     <div class="content">
     <h3>Hardware</h3>
     <ul class="resource">
-      <h4 class="naming">Naming</h4><h4 class="os">OS</h4><h4 class="countH">Count</h4>
+      <h4 class="naming">Naming</h4><h4 class="os"></h4><h4 class="countH">Count</h4>
       <i class="fa fa-lightbulb-o icon" aria-hidden="true"></i>
       {% for idlabhardware in site.data.idlabHardware %}
       <li class="ixd"><a href=""><span class="name">{{ idlabhardware.naming }}</span><span class="os"></span><span class="count">{{ idlabhardware.count }}</span></a></li>
@@ -34,7 +34,7 @@
       <h4 class="naming">Naming</h4><h4 class="os">OS</h4><h4 class="countH">Count</h4>
       <i class="fa fa-lightbulb-o icon" aria-hidden="true"></i>
       {% for idlabsoftware in site.data.idlabSoftware %}
-      <li class="ixd"><a href="">{{ idlabsoftware.naming }}</a><span class="os"></span><span class="count">{{ idlabsoftware.count }}</span></li>
+      <li class="ixd"><a href=""><span class="name">{{ idlabsoftware.naming }}</span><span class="os"></span><span class="count">{{ idlabsoftware.count }}</span></a></li>
       {% endfor %}
       <i class="fa fa-gamepad icon" aria-hidden="true"></i>
       <i class="fa fa-cogs icon" aria-hidden="true"></i>
