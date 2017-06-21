@@ -22,18 +22,18 @@
 	<div class="content">
 		<div class="homepageNav">
 			<!--Gamification lab-->
-			{% for 1Game in site.labs %}
+			{% for lab in site.labs %}
 			{% if forloop.index == 1%}
-			<a href="{{1Game.linkRef}}">
-							<div class="labs {{1Game.styleRef}}" >
-								<div class="leftSecond" aria-label="{{1Game.ariaLabel}}">
+			<a href="{{lab.linkRef}}">
+							<div class="labs {{lab.styleRef}}" >
+								<div class="leftSecond" aria-label="{{lab.ariaLabel}}">
 									<div class="labsPicSecond"></div>
 								</div>
-								<div class="rightSecondG {{1Game.styleRef}}">
+								<div class="rightSecondG {{lab.styleRef}}">
 									<div class="labsTextSecond">
-									<h2><i class="{{1Game.iconType}}" aria-hidden="true"></i>{{1Game.labName}}</h2>
+									<h2><i class="{{lab.iconType}}" aria-hidden="true"></i>{{lab.labName}}</h2>
 
-									<p>{{1Game.content}}</p>
+									<p>{{lab.content}}</p>
 									</div>
 								</div>
 							</div>
@@ -41,17 +41,17 @@
 			{% continue %}
 			{% endif %}
 			{% if forloop.index == 2 %}
-	    		<a href="{{1Game.linkRef}}">
-					<div class="labs {{1Game.styleRef}}">
-						<div class="leftFirstX {{1Game.styleRef}}">
+	    		<a href="{{lab.linkRef}}">
+					<div class="labs {{lab.styleRef}}">
+						<div class="leftFirstX {{lab.styleRef}}">
 							<div class="labsTextFirst">
-							<h2><i class="{{1Game.iconType}}" aria-hidden="true"></i>{{1Game.labName}}</h2>
+							<h2><i class="{{lab.iconType}}" aria-hidden="true"></i>{{lab.labName}}</h2>
 
-							<p>{{1Game.content}}</p>
+							<p>{{lab.content}}</p>
 
 							</div>
 						</div>
-						<div class="rightFirst" aria-label="{{1Game.ariaLabel}}">
+						<div class="rightFirst" aria-label="{{lab.ariaLabel}}">
 							<div class="labsPicFirst"></div>
 						</div>
 					</div>
@@ -59,16 +59,16 @@
 			{% continue %}
     		{% endif %}
     		{% if forloop.index == 3 %}
-			<a href="{{1Game.linkRef}}">
-					<div class="labs {{1Game.styleRef}}">
-						<div class="leftSecond" aria-label="{{1Game.ariaLabel}}">
+			<a href="{{lab.linkRef}}">
+					<div class="labs {{lab.styleRef}}">
+						<div class="leftSecond" aria-label="{{lab.ariaLabel}}">
 							<div class="labsPicFourth"></div>
 						</div>
-						<div class="rightSecondT {{1Game.styleRef}}">
+						<div class="rightSecondT {{lab.styleRef}}">
 							<div class="labsTextSecond">
-							<h2><i class="{{1Game.iconType}}" aria-hidden="true"></i>{{1Game.labName}}</h2>
+							<h2><i class="{{lab.iconType}}" aria-hidden="true"></i>{{lab.labName}}</h2>
 
-							<p>{{1Game.content}}</p>
+							<p>{{lab.content}}</p>
 							</div>
 						</div>
 					</div>
@@ -76,17 +76,17 @@
   			{% continue %}
     		{% endif %}
     		{%if forloop.index == 4 %}
-	    		<a href="{{1Game.linkRef}}">
-					<div class="labs {{1Game.styleRef}}">
-						<div class="leftFirstS {{1Game.styleRef}}">
+	    		<a href="{{lab.linkRef}}">
+					<div class="labs {{lab.styleRef}}">
+						<div class="leftFirstS {{lab.styleRef}}">
 							<div class="labsTextFirst">
-							<h2><i class="{{1Game.iconType}}" aria-hidden="true"></i>{{1Game.labName}}</h2>
+							<h2><i class="{{lab.iconType}}" aria-hidden="true"></i>{{lab.labName}}</h2>
 
-							<p>{{1Game.content}}</p>
+							<p>{{lab.content}}</p>
 
 							</div>
 						</div>
-						<div class="rightFirst" aria-label="{{1Game.ariaLabel}}">
+						<div class="rightFirst" aria-label="{{lab.ariaLabel}}">
 							<div class="labsPicThird"></div>
 						</div>
 					</div>
@@ -94,7 +94,7 @@
 			{% continue %}
     		{% endif %}
 			{% endfor %}
-			
+			<br><br>
 
     {% include footer.html %}
 

@@ -29,27 +29,40 @@ a{
 }
 
 /*Icons*/
+
 .fa-gamepad {
  	color: rgba(143, 0, 179, 1);
  	margin-right: 15px;
+	-webkit-transition: text-shadow 0.2s;
+	-moz-transition: text-shadow 0.2s;
+	transition:text-shadow 0.2s;
 }
+
 .fa-cogs {
 	color: rgba(0, 153, 255, 1);
 	margin-right: 15px;
+	-webkit-transition: text-shadow 0.2s;
+	-moz-transition: text-shadow 0.2s;
+	transition:text-shadow 0.2s;
 }
 .fa-code{
 	color: rgba(255, 153, 0, 1);
 	margin-right: 15px;
+	-webkit-transition: text-shadow 0.2s;
+	-moz-transition: text-shadow 0.2s;
+	transition:text-shadow 0.2s;
 }
 .fa-lightbulb-o{
 	color: rgba(8, 153, 0, 1);
 	margin-right: 15px;
+	-webkit-transition: text-shadow 0.2s;
+	-moz-transition: text-shadow 0.2s;
+	transition:text-shadow 0.2s;
 }
 
 
 
 /*Parent div*/
-
 
 .labs{
 	margin-bottom:20px;
@@ -68,7 +81,7 @@ a{
 
 }
 
-/*Generated styles*/
+/*Generated style ID*/
 
 .Games{	
 	border-right: 5px solid;
@@ -98,6 +111,9 @@ a{
 }
 
 /*Child divs*/
+
+/*IDLAB TEXTDIV*/
+
 .leftFirstX{
 	width: auto;
 	margin: 0 0 0 -120px;
@@ -118,6 +134,8 @@ a{
 	border-right-color: rgba(8, 153, 0, 1);
 
 }
+
+/*SOFTWARE TEXTDIV*/
 
 .leftFirstS{
 	width: auto;
@@ -140,6 +158,7 @@ a{
 
 }
 
+/*GAMES PIC DIV*/
 
 .leftSecond{
 	min-width: 40%;
@@ -157,6 +176,7 @@ a{
 }
 
 
+/*IMAGES*/
 
 .labsPicFirst{
 	background: url("{{base}}/assets/img/ixd.jpg");
@@ -219,6 +239,7 @@ a{
 	height:100%;
 }
 
+/*IXD PIC DIV*/
 
 .rightFirst{
 	min-width: 40%;
@@ -234,6 +255,8 @@ a{
 	-webkit-transition:margin 0.5s;
 	-moz-transition:margin 0.5s;
 }
+
+/*GAME TEXT DIV*/
 
 .rightSecondG{
 	width: auto;
@@ -256,6 +279,8 @@ a{
 
 }
 
+/*TECH TEXT DIV*/
+
 .rightSecondT{
 	width: auto;
 	margin: 0 -80px 0 10px;
@@ -277,6 +302,7 @@ a{
 
 }
 
+/*GAME, TECH TEXT DIV*/
 
 .labsTextSecond{
 	-webkit-transform: skew(-20deg);
@@ -289,6 +315,7 @@ a{
 	margin-bottom: 10px;
 }
 
+/*IDX, SOFT TEXT DIV*/
 .labsTextFirst{
 	-webkit-transform: skew(-20deg);
 	-moz-transform: skew(-20deg);
@@ -325,25 +352,39 @@ a{
 
 /*Hovers*/
 
+.labs:hover .fa-lightbulb-o{
+	text-shadow: 4px 4px 2px #bbb;
+}
+.labs:hover .fa-gamepad{
+	text-shadow: 4px 4px 2px #bbb;
+}
+.labs:hover .fa-code{
+	text-shadow: 4px 4px 2px #bbb;
+}
+.labs:hover .fa-cogs{
+	text-shadow: 4px 4px 2px #bbb;
+}
+
+
 
 .labs:hover{
     width: 104%;
     transform:translate(-2%, 0%);
 }
 
-.labs:hover .rightSecond{
+.labs:hover .rightSecondG{
 	margin-left:20px;
 	/*background:rgba(124,70,145,0.45);*/
 }
-.labs:hover .leftSecond{
+.labs:hover .rightSecondT{
 	margin-left:20px;
 
 }
-.labs:hover .leftFirst{
+.labs:hover .leftFirstX{
 	margin-right: 10px;
 }
-.labs:hover .rightFirst{
-	margin-left:10px;
+.labs:hover .leftFirstS{
+	margin-right:10px;
 }
 
 
@@ -436,6 +477,7 @@ a{
 		-o-transform: skew(0deg);
 		margin: 0px;
 		border-right:none;
+		height: auto;
 	}
 	.rightSecondT{
 		-webkit-transform: skew(0deg);
@@ -443,6 +485,7 @@ a{
 		-o-transform: skew(0deg);
 		margin: 0px;
 		border-right:none;
+		height: auto;
 	}
 	.leftFirstX{
 		-webkit-transform: skew(0deg);
@@ -451,6 +494,7 @@ a{
 		margin: 0px;
 		border-right:none;
 		border-left:none;
+		height: auto;
 	}
 	.leftFirstS{
 		-webkit-transform: skew(0deg);
@@ -459,6 +503,7 @@ a{
 		margin: 0px;
 		border-right:none;
 		border-left:none;
+		height: auto;
 	}
 	.labsTextSecond{
 		-webkit-transform: skew(0deg);
@@ -469,6 +514,7 @@ a{
 		text-overflow: ellipsis;
 		padding-right: 0px;
 		margin-left: 0px;
+		height: auto;
 	}
 	.labsTextFirst{
 		-webkit-transform: skew(0deg);
@@ -480,6 +526,7 @@ a{
 		padding-left: 0px;
 		margin-left: 0px;
 		margin-right: 0px;
+		height: auto;
 	}
 
 	/*Html Elements*/

@@ -74,4 +74,9 @@ footer ul li:last-of-type {
   footer ul li:first-of-type {
     border-right: 1px solid grey;
   }
+
+  .content {
+    margin: 10px;
+  }
+
 }
